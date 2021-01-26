@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1koanmaxo7Oq0Qn0lbIdLVPFR80" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="Application.HttpUtils">
+    <configuration name="HttpUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chen.study.util.HttpUtils" />
+      <module name="crawler_chen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chen.study.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClientTest.testConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crawler_chen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chen.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chen.study" />
+      <option name="MAIN_CLASS_NAME" value="chen.study.HttpClientTest" />
+      <option name="METHOD_NAME" value="testConfig" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClientTest.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crawler_chen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chen.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chen.study" />
+      <option name="MAIN_CLASS_NAME" value="chen.study.HttpClientTest" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClientTest.testPool" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crawler_chen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chen.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chen.study" />
+      <option name="MAIN_CLASS_NAME" value="chen.study.HttpClientTest" />
+      <option name="METHOD_NAME" value="testPool" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClientTest.testPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crawler_chen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chen.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chen.study" />
+      <option name="MAIN_CLASS_NAME" value="chen.study.HttpClientTest" />
+      <option name="METHOD_NAME" value="testPost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HttpUtils" />
+        <item itemvalue="JUnit.HttpClientTest.testConfig" />
+        <item itemvalue="JUnit.HttpClientTest.testPool" />
+        <item itemvalue="JUnit.HttpClientTest.testPost" />
+        <item itemvalue="JUnit.HttpClientTest.testGet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="" />
+      <created>1606369566109</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606369566109</updated>
+      <workItem from="1606369567930" duration="5578000" />
+      <workItem from="1607487163129" duration="313000" />
+      <workItem from="1607580155202" duration="1486000" />
+      <workItem from="1610625068621" duration="686000" />
+      <workItem from="1610632377444" duration="8973000" />
+      <workItem from="1611635976798" duration="3484000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="305" y="61" key="#项目结构" timestamp="1606370581579">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state x="305" y="61" key="#项目结构/45.23.1321.745@45.23.1321.745" timestamp="1606370581579" />
+    <state width="1277" height="317" key="GridCell.Tab.0.bottom" timestamp="1611653199587">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state width="1277" height="317" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611653199587" />
+    <state width="1277" height="427" key="GridCell.Tab.0.bottom/47.23.1319.745@47.23.1319.745" timestamp="1610632042928" />
+    <state width="1277" height="317" key="GridCell.Tab.0.center" timestamp="1611653199586">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state width="1277" height="317" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1611653199586" />
+    <state width="1277" height="427" key="GridCell.Tab.0.center/47.23.1319.745@47.23.1319.745" timestamp="1610632042926" />
+    <state width="1277" height="317" key="GridCell.Tab.0.left" timestamp="1611653199585">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state width="1277" height="317" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1611653199585" />
+    <state width="1277" height="427" key="GridCell.Tab.0.left/47.23.1319.745@47.23.1319.745" timestamp="1610632042925" />
+    <state width="1277" height="317" key="GridCell.Tab.0.right" timestamp="1611653199587">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state width="1277" height="317" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1611653199587" />
+    <state width="1277" height="427" key="GridCell.Tab.0.right/47.23.1319.745@47.23.1319.745" timestamp="1610632042927" />
+    <state width="1277" height="232" key="GridCell.Tab.1.bottom" timestamp="1611644754801">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state width="1277" height="232" key="GridCell.Tab.1.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611644754801" />
+    <state width="1277" height="232" key="GridCell.Tab.1.center" timestamp="1611644754798">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state width="1277" height="232" key="GridCell.Tab.1.center/45.23.1321.745@45.23.1321.745" timestamp="1611644754798" />
+    <state width="1277" height="232" key="GridCell.Tab.1.left" timestamp="1611644754798">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state width="1277" height="232" key="GridCell.Tab.1.left/45.23.1321.745@45.23.1321.745" timestamp="1611644754798" />
+    <state width="1277" height="232" key="GridCell.Tab.1.right" timestamp="1611644754799">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state width="1277" height="232" key="GridCell.Tab.1.right/45.23.1321.745@45.23.1321.745" timestamp="1611644754799" />
+    <state x="193" y="23" key="SettingsEditor" timestamp="1606373955518">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state x="193" y="23" key="SettingsEditor/45.23.1321.745@45.23.1321.745" timestamp="1606373955518" />
+    <state x="318" y="125" width="774" height="540" key="find.popup" timestamp="1606370913941">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state x="318" y="125" width="774" height="540" key="find.popup/45.23.1321.745@45.23.1321.745" timestamp="1606370913941" />
+    <state x="135" y="93" key="new project wizard" timestamp="1606369671019">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state x="135" y="93" key="new project wizard/45.23.1321.745@45.23.1321.745" timestamp="1606369671019" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/crawler_chen/src/main/java/chen/study/HttpClientTest.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
