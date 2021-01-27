@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="" />
+    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="爬虫封装">
+      <change afterPath="$PROJECT_DIR$/crawler_chen/jsoup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler_chen/src/main/java/chen/study/JsoupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_chen/src/main/java/chen/study/util/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_chen/src/main/java/chen/study/util/HttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_chen/target/classes/chen/study/util/HttpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_chen/target/classes/chen/study/util/HttpUtils.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
   </component>
@@ -18,7 +25,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1koanmaxo7Oq0Qn0lbIdLVPFR80" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,12 +43,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/crawler_chen" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.HttpUtils">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="chen.study" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/crawler_chen" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.JsoupTest.testGetDocument">
     <configuration name="HttpUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chen.study.util.HttpUtils" />
       <module name="crawler_chen" />
@@ -58,22 +87,6 @@
       <option name="PACKAGE_NAME" value="chen.study" />
       <option name="MAIN_CLASS_NAME" value="chen.study.HttpClientTest" />
       <option name="METHOD_NAME" value="testConfig" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HttpClientTest.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crawler_chen" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chen.study.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chen.study" />
-      <option name="MAIN_CLASS_NAME" value="chen.study.HttpClientTest" />
-      <option name="METHOD_NAME" value="testGet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,13 +124,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JsoupTest.testGetDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crawler_chen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chen.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chen.study" />
+      <option name="MAIN_CLASS_NAME" value="chen.study.JsoupTest" />
+      <option name="METHOD_NAME" value="testGetDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JsoupTest.testGetDocument" />
         <item itemvalue="Application.HttpUtils" />
         <item itemvalue="JUnit.HttpClientTest.testConfig" />
         <item itemvalue="JUnit.HttpClientTest.testPool" />
         <item itemvalue="JUnit.HttpClientTest.testPost" />
-        <item itemvalue="JUnit.HttpClientTest.testGet" />
       </list>
     </recent_temporary>
   </component>
@@ -148,58 +177,87 @@
       <workItem from="1607580155202" duration="1486000" />
       <workItem from="1610625068621" duration="686000" />
       <workItem from="1610632377444" duration="8973000" />
-      <workItem from="1611635976798" duration="3484000" />
+      <workItem from="1611635976798" duration="8053000" />
+      <workItem from="1611674024363" duration="896000" />
     </task>
+    <task id="LOCAL-00001" summary="爬虫封装">
+      <created>1611653917784</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611653917784</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="爬虫封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="爬虫封装" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="518" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1611655233978">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state x="518" y="112" key="#com.intellij.ide.util.MemberChooser/45.23.1321.745@45.23.1321.745" timestamp="1611655233978" />
     <state x="305" y="61" key="#项目结构" timestamp="1606370581579">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state x="305" y="61" key="#项目结构/45.23.1321.745@45.23.1321.745" timestamp="1606370581579" />
-    <state width="1277" height="317" key="GridCell.Tab.0.bottom" timestamp="1611653199587">
+    <state x="318" y="23" key="CommitChangelistDialog2" timestamp="1611657056349">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="317" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611653199587" />
+    <state x="318" y="23" key="CommitChangelistDialog2/45.23.1321.745@45.23.1321.745" timestamp="1611657056349" />
+    <state width="1277" height="249" key="GridCell.Tab.0.bottom" timestamp="1611668158389">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state width="1277" height="249" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611668158389" />
     <state width="1277" height="427" key="GridCell.Tab.0.bottom/47.23.1319.745@47.23.1319.745" timestamp="1610632042928" />
-    <state width="1277" height="317" key="GridCell.Tab.0.center" timestamp="1611653199586">
+    <state width="1277" height="249" key="GridCell.Tab.0.center" timestamp="1611668158388">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="317" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1611653199586" />
+    <state width="1277" height="249" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1611668158388" />
     <state width="1277" height="427" key="GridCell.Tab.0.center/47.23.1319.745@47.23.1319.745" timestamp="1610632042926" />
-    <state width="1277" height="317" key="GridCell.Tab.0.left" timestamp="1611653199585">
+    <state width="1277" height="249" key="GridCell.Tab.0.left" timestamp="1611668158387">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="317" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1611653199585" />
+    <state width="1277" height="249" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1611668158387" />
     <state width="1277" height="427" key="GridCell.Tab.0.left/47.23.1319.745@47.23.1319.745" timestamp="1610632042925" />
-    <state width="1277" height="317" key="GridCell.Tab.0.right" timestamp="1611653199587">
+    <state width="1277" height="249" key="GridCell.Tab.0.right" timestamp="1611668158388">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="317" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1611653199587" />
+    <state width="1277" height="249" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1611668158388" />
     <state width="1277" height="427" key="GridCell.Tab.0.right/47.23.1319.745@47.23.1319.745" timestamp="1610632042927" />
-    <state width="1277" height="232" key="GridCell.Tab.1.bottom" timestamp="1611644754801">
+    <state width="1277" height="232" key="GridCell.Tab.1.bottom" timestamp="1611668158288">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="232" key="GridCell.Tab.1.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611644754801" />
-    <state width="1277" height="232" key="GridCell.Tab.1.center" timestamp="1611644754798">
+    <state width="1277" height="232" key="GridCell.Tab.1.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611668158288" />
+    <state width="1277" height="232" key="GridCell.Tab.1.center" timestamp="1611668158286">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="232" key="GridCell.Tab.1.center/45.23.1321.745@45.23.1321.745" timestamp="1611644754798" />
-    <state width="1277" height="232" key="GridCell.Tab.1.left" timestamp="1611644754798">
+    <state width="1277" height="232" key="GridCell.Tab.1.center/45.23.1321.745@45.23.1321.745" timestamp="1611668158286" />
+    <state width="1277" height="232" key="GridCell.Tab.1.left" timestamp="1611668158285">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="232" key="GridCell.Tab.1.left/45.23.1321.745@45.23.1321.745" timestamp="1611644754798" />
-    <state width="1277" height="232" key="GridCell.Tab.1.right" timestamp="1611644754799">
+    <state width="1277" height="232" key="GridCell.Tab.1.left/45.23.1321.745@45.23.1321.745" timestamp="1611668158285" />
+    <state width="1277" height="232" key="GridCell.Tab.1.right" timestamp="1611668158287">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="232" key="GridCell.Tab.1.right/45.23.1321.745@45.23.1321.745" timestamp="1611644754799" />
+    <state width="1277" height="232" key="GridCell.Tab.1.right/45.23.1321.745@45.23.1321.745" timestamp="1611668158287" />
     <state x="193" y="23" key="SettingsEditor" timestamp="1606373955518">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state x="193" y="23" key="SettingsEditor/45.23.1321.745@45.23.1321.745" timestamp="1606373955518" />
+    <state x="305" y="124" key="Vcs.Push.Dialog.v2" timestamp="1611653940677">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state x="305" y="124" key="Vcs.Push.Dialog.v2/45.23.1321.745@45.23.1321.745" timestamp="1611653940677" />
+    <state x="484" y="129" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1611655239472">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state x="484" y="129" key="com.intellij.testIntegration.createTest.CreateTestDialog/45.23.1321.745@45.23.1321.745" timestamp="1611655239472" />
     <state x="318" y="125" width="774" height="540" key="find.popup" timestamp="1606370913941">
       <screen x="45" y="23" width="1321" height="745" />
     </state>

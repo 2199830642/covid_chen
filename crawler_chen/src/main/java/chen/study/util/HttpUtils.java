@@ -74,7 +74,7 @@ public abstract class HttpUtils {
     }
 
     public static void main(String[] args) {
-        String html = HttpUtils.getHtml("http://www.itcast.cn");
+        String html = HttpUtils.getHtml("https://tieba.baidu.com/index.html");
         System.out.println(html);
     }
 }
