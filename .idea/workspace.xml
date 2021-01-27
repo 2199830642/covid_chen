@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="爬虫封装">
-      <change afterPath="$PROJECT_DIR$/crawler_chen/jsoup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_chen/src/main/java/chen/study/JsoupTest.java" afterDir="false" />
+    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/DatasourceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/util/HttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/util/TimeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasource/src/test/java/chen/study/DatasourceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawler_chen/src/main/java/chen/study/util/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_chen/src/main/java/chen/study/util/HttpUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler_chen/target/classes/chen/study/util/HttpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_chen/target/classes/chen/study/util/HttpUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Arquillian JUnit Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -32,28 +45,47 @@
       </set>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/local/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1koanmaxo7Oq0Qn0lbIdLVPFR80" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/crawler_chen" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="chen.study" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="chen.study.util" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -62,7 +94,20 @@
       <recent name="$PROJECT_DIR$/crawler_chen" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JsoupTest.testGetDocument">
+  <component name="RunManager" selected="Application.DatasourceApplication">
+    <configuration name="DatasourceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chen.study.DatasourceApplication" />
+      <module name="datasource" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chen.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HttpUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chen.study.util.HttpUtils" />
       <module name="crawler_chen" />
@@ -108,22 +153,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpClientTest.testPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crawler_chen" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chen.study.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chen.study" />
-      <option name="MAIN_CLASS_NAME" value="chen.study.HttpClientTest" />
-      <option name="METHOD_NAME" value="testPost" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JsoupTest.testGetDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crawler_chen" />
       <extension name="coverage">
@@ -140,13 +169,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DatasourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="datasource" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="chen.study.DatasourceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DatasourceApplication" />
         <item itemvalue="JUnit.JsoupTest.testGetDocument" />
         <item itemvalue="Application.HttpUtils" />
         <item itemvalue="JUnit.HttpClientTest.testConfig" />
         <item itemvalue="JUnit.HttpClientTest.testPool" />
-        <item itemvalue="JUnit.HttpClientTest.testPost" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +214,15 @@
       <workItem from="1610625068621" duration="686000" />
       <workItem from="1610632377444" duration="8973000" />
       <workItem from="1611635976798" duration="8053000" />
-      <workItem from="1611674024363" duration="896000" />
+      <workItem from="1611674024363" duration="5581000" />
+      <workItem from="1611743233559" duration="92000" />
+      <workItem from="1611743361843" duration="427000" />
+      <workItem from="1611743796062" duration="995000" />
+      <workItem from="1611744797190" duration="290000" />
+      <workItem from="1611745146239" duration="64000" />
+      <workItem from="1611745361000" duration="661000" />
+      <workItem from="1611752730464" duration="1304000" />
+      <workItem from="1611754191607" duration="2158000" />
     </task>
     <task id="LOCAL-00001" summary="爬虫封装">
       <created>1611653917784</created>
@@ -187,48 +231,65 @@
       <option name="project" value="LOCAL" />
       <updated>1611653917784</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="jsoup基本使用方法">
+      <created>1611738378240</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611738378240</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="爬虫封装" />
-    <option name="LAST_COMMIT_MESSAGE" value="爬虫封装" />
+    <MESSAGE value="jsoup基本使用方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="jsoup基本使用方法" />
   </component>
   <component name="WindowStateProjectService">
     <state x="518" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1611655233978">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state x="518" y="112" key="#com.intellij.ide.util.MemberChooser/45.23.1321.745@45.23.1321.745" timestamp="1611655233978" />
-    <state x="305" y="61" key="#项目结构" timestamp="1606370581579">
+    <state x="335" y="91" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1611739168459">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state x="305" y="61" key="#项目结构/45.23.1321.745@45.23.1321.745" timestamp="1606370581579" />
-    <state x="318" y="23" key="CommitChangelistDialog2" timestamp="1611657056349">
+    <state x="335" y="91" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/45.23.1321.745@45.23.1321.745" timestamp="1611739168459" />
+    <state x="305" y="61" key="#项目结构" timestamp="1611754529203">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state x="318" y="23" key="CommitChangelistDialog2/45.23.1321.745@45.23.1321.745" timestamp="1611657056349" />
-    <state width="1277" height="249" key="GridCell.Tab.0.bottom" timestamp="1611668158389">
+    <state x="305" y="61" key="#项目结构/45.23.1321.745@45.23.1321.745" timestamp="1611754529203" />
+    <state x="429" y="247" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1611754758692">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="249" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611668158389" />
+    <state x="429" y="247" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/45.23.1321.745@45.23.1321.745" timestamp="1611754758692" />
+    <state x="318" y="23" key="CommitChangelistDialog2" timestamp="1611757377328">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state x="318" y="23" key="CommitChangelistDialog2/45.23.1321.745@45.23.1321.745" timestamp="1611757377328" />
+    <state width="1277" height="249" key="GridCell.Tab.0.bottom" timestamp="1611757181631">
+      <screen x="45" y="23" width="1321" height="745" />
+    </state>
+    <state width="1277" height="249" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611757181631" />
     <state width="1277" height="427" key="GridCell.Tab.0.bottom/47.23.1319.745@47.23.1319.745" timestamp="1610632042928" />
-    <state width="1277" height="249" key="GridCell.Tab.0.center" timestamp="1611668158388">
+    <state width="1277" height="249" key="GridCell.Tab.0.center" timestamp="1611757181630">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="249" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1611668158388" />
+    <state width="1277" height="249" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1611757181630" />
     <state width="1277" height="427" key="GridCell.Tab.0.center/47.23.1319.745@47.23.1319.745" timestamp="1610632042926" />
-    <state width="1277" height="249" key="GridCell.Tab.0.left" timestamp="1611668158387">
+    <state width="1277" height="249" key="GridCell.Tab.0.left" timestamp="1611757181629">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="249" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1611668158387" />
+    <state width="1277" height="249" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1611757181629" />
     <state width="1277" height="427" key="GridCell.Tab.0.left/47.23.1319.745@47.23.1319.745" timestamp="1610632042925" />
-    <state width="1277" height="249" key="GridCell.Tab.0.right" timestamp="1611668158388">
+    <state width="1277" height="249" key="GridCell.Tab.0.right" timestamp="1611757181630">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state width="1277" height="249" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1611668158388" />
+    <state width="1277" height="249" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1611757181630" />
     <state width="1277" height="427" key="GridCell.Tab.0.right/47.23.1319.745@47.23.1319.745" timestamp="1610632042927" />
     <state width="1277" height="232" key="GridCell.Tab.1.bottom" timestamp="1611668158288">
       <screen x="45" y="23" width="1321" height="745" />
@@ -246,26 +307,28 @@
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state width="1277" height="232" key="GridCell.Tab.1.right/45.23.1321.745@45.23.1321.745" timestamp="1611668158287" />
-    <state x="193" y="23" key="SettingsEditor" timestamp="1606373955518">
+    <state x="115" y="46" key="SettingsEditor" timestamp="1611755046660">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state x="193" y="23" key="SettingsEditor/45.23.1321.745@45.23.1321.745" timestamp="1606373955518" />
-    <state x="305" y="124" key="Vcs.Push.Dialog.v2" timestamp="1611653940677">
+    <state x="115" y="46" key="SettingsEditor/45.23.1321.745@45.23.1321.745" timestamp="1611755046660" />
+    <state x="118" y="46" key="SettingsEditor/47.23.1319.745@47.23.1319.745" timestamp="1611746031390" />
+    <state x="305" y="124" key="Vcs.Push.Dialog.v2" timestamp="1611738382239">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state x="305" y="124" key="Vcs.Push.Dialog.v2/45.23.1321.745@45.23.1321.745" timestamp="1611653940677" />
+    <state x="305" y="124" key="Vcs.Push.Dialog.v2/45.23.1321.745@45.23.1321.745" timestamp="1611738382239" />
     <state x="484" y="129" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1611655239472">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state x="484" y="129" key="com.intellij.testIntegration.createTest.CreateTestDialog/45.23.1321.745@45.23.1321.745" timestamp="1611655239472" />
-    <state x="318" y="125" width="774" height="540" key="find.popup" timestamp="1606370913941">
+    <state x="318" y="125" width="774" height="540" key="find.popup" timestamp="1611754925166">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state x="318" y="125" width="774" height="540" key="find.popup/45.23.1321.745@45.23.1321.745" timestamp="1606370913941" />
-    <state x="135" y="93" key="new project wizard" timestamp="1606369671019">
+    <state x="318" y="125" width="774" height="540" key="find.popup/45.23.1321.745@45.23.1321.745" timestamp="1611754925166" />
+    <state x="133" y="105" key="new project wizard" timestamp="1611754499867">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
-    <state x="135" y="93" key="new project wizard/45.23.1321.745@45.23.1321.745" timestamp="1606369671019" />
+    <state x="133" y="105" key="new project wizard/45.23.1321.745@45.23.1321.745" timestamp="1611754499867" />
+    <state x="138" y="176" key="new project wizard/47.23.1319.745@47.23.1319.745" timestamp="1611752811499" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
