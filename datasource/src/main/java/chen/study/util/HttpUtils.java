@@ -30,10 +30,9 @@ public abstract class HttpUtils {
         config = RequestConfig.custom()
                 .setSocketTimeout(10000)
                 .setConnectTimeout(10000)
-                .setConnectionRequestTimeout(10000)
-                .setProxy(new HttpHost("47.98.112.7",80)).build();//代理服务器
+                .setConnectionRequestTimeout(10000).build();//代理服务器
         userAgentList = new ArrayList<>();
-        //每次访问浏览器都不一样，避免封掉IP
+        //每次访问发送给浏览器的请求地址都不一样，避免封掉IP
         userAgentList.add("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36");
         userAgentList.add("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:73.0) Gecko/20100101 Firefox/73.0");
         userAgentList.add("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15");
