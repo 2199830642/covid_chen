@@ -27,6 +27,8 @@ public class KafkaProducerConfig {
     private String linger_ms_config;
     @Value("${kafka.buffer_memory_config}")
     private String buffer_memory_config;
+    @Value("52428800")
+    private String spring_kafka_producer_properties_max_request_size;
 
     @Bean//表示该方法返回的对象交给Spring管理
     public KafkaTemplate  getKafkaTemplate(){
@@ -36,6 +38,7 @@ public class KafkaProducerConfig {
         configs.put(ProducerConfig.BATCH_SIZE_CONFIG,batch_size_config);
         configs.put(ProducerConfig.LINGER_MS_CONFIG,linger_ms_config);
         configs.put(ProducerConfig.BUFFER_MEMORY_CONFIG,buffer_memory_config);
+        configs.put(ProducerConfig.MAX_REQUEST_SIZE_CONFIG,spring_kafka_producer_properties_max_request_size);
         //设置发送到Kafka中的消息的Key/Value序列化类型,指定为<locationId:Integer,Value:String>
         configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class);
         configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);

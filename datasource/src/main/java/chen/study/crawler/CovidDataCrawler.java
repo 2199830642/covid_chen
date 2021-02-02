@@ -11,7 +11,6 @@ import org.jsoup.nodes.Document;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -42,7 +41,7 @@ public class CovidDataCrawler {
 
 
     @Test
-    public void test() {
+    public void test() throws Exception {
         String dateTime = TimeUtils.format(System.currentTimeMillis(), "yyyy-MM-dd");
 
         //1.爬取指定页面
@@ -82,6 +81,9 @@ public class CovidDataCrawler {
                 bean.setProvinceShortName(pBean.getProvinceShortName());
                 //System.out.println(bean);
                 //后续需要将城市疫情数据发送给kafka
+                //将JavaBean转为json字符串，再发送给kafka
+                String beanStr = JSON.toJSONString(bean);
+                kafkaTemplate.send("covid19",bean.getPid(),beanStr);
             }
             //6.获取第一层json（省份数据）中每一天的统计数据
             String statisticsDataUrl = pBean.getStatisticsData();
@@ -94,6 +96,9 @@ public class CovidDataCrawler {
             pBean.setCities(null);
             //System.out.println(pBean);
             //后续需要将省份疫情数据发送给kafka
+            String pBeanStr = JSON.toJSONString(pBean);
+            kafkaTemplate.send("covid19",pBean.getLocationId(),pBeanStr);
         }
+        Thread.sleep(100000);
     }
 }
