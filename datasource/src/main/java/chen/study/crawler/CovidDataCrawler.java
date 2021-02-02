@@ -32,8 +32,8 @@ public class CovidDataCrawler {
 
     @Test
     public void testKafkaTemplate() throws Exception {
-        kafkaTemplate.send("test",1,"abc");
-        Thread.sleep(10000000);
+        kafkaTemplate.send("covid19",1,"ccc");
+        Thread.sleep(100000);
     }
 
 
