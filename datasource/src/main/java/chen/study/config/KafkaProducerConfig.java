@@ -13,8 +13,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * KafkaTemplate配置类
- */
+ * @program: covid_chen
+ * @author: XiaoChen
+ * @description:kafkaTemplate配置类
+ * @date: 2021-01-28 14:32
+ **/
 @Configuration//表示这是一个配置类
 public class KafkaProducerConfig {
     @Value("${kafka.bootstrap.servers}")

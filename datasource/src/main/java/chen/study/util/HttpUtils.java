@@ -14,9 +14,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/*
-* 封装HttpClient工具，方便爬取网页内容
-* */
+/**
+ * @program: covid_chen
+ * @author: XiaoChen
+ * @description:封装HttpClient工具，方便爬取网页内容
+ * @date: 2021-01-15 17:40
+ **/
 public abstract class HttpUtils {
 
     private static PoolingHttpClientConnectionManager cm;//声明HttpClient管理器对象（连接池）

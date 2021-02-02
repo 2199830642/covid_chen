@@ -13,6 +13,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
@@ -20,10 +22,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 实现疫情数据爬取
- */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes= DatasourceApplication.class)
+ * @program: covid_chen
+ * @author: XiaoChen
+ * @description:实现疫情数据爬取
+ * @date: 2021-01-25 14:22
+ **/
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@SpringBootTest(classes= DatasourceApplication.class)
+@Component
 public class CovidDataCrawler {
 
     @Autowired
@@ -35,12 +41,11 @@ public class CovidDataCrawler {
         Thread.sleep(100000);
     }
 
-
-
-
-
-
-    @Test
+    //每天早上八点爬取疫情数据
+    //@Scheduled(initialDelay = 1000,fixedDelay = 1000)
+    //@Scheduled(cron = "0/1 * * * * ?")//每隔一秒执行一次
+    //@Scheduled(cron = "0/5 * * * * ?")//每隔五秒执行一次
+    @Scheduled(cron = "0 0 8 * * ?")
     public void test() throws Exception {
         String dateTime = TimeUtils.format(System.currentTimeMillis(), "yyyy-MM-dd");
 

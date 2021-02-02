@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/crawler/SchedulerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasource/src/main/java/chen/study/DatasourceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/DatasourceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasource/src/main/java/chen/study/config/CustomerPartitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/config/CustomerPartitioner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datasource/src/main/java/chen/study/config/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/config/KafkaProducerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datasource/src/main/java/chen/study/crawler/CovidDataCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/crawler/CovidDataCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasource/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasource/src/main/java/chen/study/util/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/util/HttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasource/src/main/java/chen/study/util/TimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/util/TimeUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +58,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -64,7 +72,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -80,7 +88,7 @@
       <recent name="$PROJECT_DIR$/crawler_chen" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CovidDataCrawler.test">
+  <component name="RunManager" selected="Spring Boot.DatasourceApplication">
     <configuration name="DatasourceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chen.study.DatasourceApplication" />
       <module name="datasource" />
@@ -94,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chen.study.util.HttpUtils" />
-      <module name="crawler_chen" />
+    <configuration name="SchedulerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chen.study.crawler.SchedulerTest" />
+      <module name="datasource" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chen.study.util.*" />
+          <option name="PATTERN" value="chen.study.crawler.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SchedulerTest" />
         <item itemvalue="JUnit.CovidDataCrawler.test" />
         <item itemvalue="JUnit.CovidDataCrawler.testKafkaTemplate" />
         <item itemvalue="Application.DatasourceApplication" />
         <item itemvalue="JUnit.JsoupTest.testGetDocument" />
-        <item itemvalue="Application.HttpUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +221,7 @@
       <workItem from="1611832635535" duration="1398000" />
       <workItem from="1611988146521" duration="7495000" />
       <workItem from="1612059332739" duration="2080000" />
-      <workItem from="1612098017478" duration="7460000" />
+      <workItem from="1612098017478" duration="9776000" />
     </task>
     <task id="LOCAL-00001" summary="爬虫封装">
       <created>1611653917784</created>
@@ -250,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612245913619</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="爬取到的疫情数据也已经可以发送给kafka">
+      <created>1612256771396</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612256771399</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +278,8 @@
     <MESSAGE value="疫情数据爬取准备" />
     <MESSAGE value="数据爬取完成，准备发给kafka" />
     <MESSAGE value="测试数据发送给kafka完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试数据发送给kafka完成" />
+    <MESSAGE value="爬取到的疫情数据也已经可以发送给kafka" />
+    <option name="LAST_COMMIT_MESSAGE" value="爬取到的疫情数据也已经可以发送给kafka" />
   </component>
   <component name="WindowStateProjectService">
     <state x="517" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1611989883671">
@@ -283,59 +299,63 @@
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state x="429" y="247" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/45.23.1321.745@45.23.1321.745" timestamp="1611754758692" />
-    <state x="318" y="23" key="CommitChangelistDialog2" timestamp="1612245912752">
-      <screen x="45" y="23" width="1321" height="745" />
-    </state>
-    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1612013616958" />
-    <state x="318" y="23" key="CommitChangelistDialog2/45.23.1321.745@45.23.1321.745" timestamp="1612245912752" />
-    <state width="1321" height="286" key="GridCell.Tab.0.bottom" timestamp="1612256526076">
+    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1612256770279">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1612256526076" />
+    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1612256770279" />
+    <state x="318" y="23" key="CommitChangelistDialog2/45.23.1321.745@45.23.1321.745" timestamp="1612245912752" />
+    <state width="1321" height="286" key="GridCell.Tab.0.bottom" timestamp="1612257820480">
+      <screen x="43" y="23" width="1323" height="745" />
+    </state>
+    <state width="1321" height="286" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1612257820480" />
     <state width="1279" height="594" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1612084730400" />
     <state width="1277" height="427" key="GridCell.Tab.0.bottom/47.23.1319.745@47.23.1319.745" timestamp="1610632042928" />
-    <state width="1321" height="286" key="GridCell.Tab.0.center" timestamp="1612256526074">
+    <state width="1321" height="286" key="GridCell.Tab.0.center" timestamp="1612257820477">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1612256526074" />
+    <state width="1321" height="286" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1612257820477" />
     <state width="1279" height="594" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1612084730398" />
     <state width="1277" height="427" key="GridCell.Tab.0.center/47.23.1319.745@47.23.1319.745" timestamp="1610632042926" />
-    <state width="1321" height="286" key="GridCell.Tab.0.left" timestamp="1612256526073">
+    <state width="1321" height="286" key="GridCell.Tab.0.left" timestamp="1612257820476">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1612256526073" />
+    <state width="1321" height="286" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1612257820476" />
     <state width="1279" height="594" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1612084730395" />
     <state width="1277" height="427" key="GridCell.Tab.0.left/47.23.1319.745@47.23.1319.745" timestamp="1610632042925" />
-    <state width="1321" height="286" key="GridCell.Tab.0.right" timestamp="1612256526075">
+    <state width="1321" height="286" key="GridCell.Tab.0.right" timestamp="1612257820479">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1612256526075" />
+    <state width="1321" height="286" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1612257820479" />
     <state width="1279" height="594" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1612084730399" />
     <state width="1277" height="427" key="GridCell.Tab.0.right/47.23.1319.745@47.23.1319.745" timestamp="1610632042927" />
-    <state width="1277" height="232" key="GridCell.Tab.1.bottom" timestamp="1611668158288">
-      <screen x="45" y="23" width="1321" height="745" />
+    <state width="1321" height="286" key="GridCell.Tab.1.bottom" timestamp="1612257820482">
+      <screen x="43" y="23" width="1323" height="745" />
     </state>
+    <state width="1321" height="286" key="GridCell.Tab.1.bottom/43.23.1323.745@43.23.1323.745" timestamp="1612257820482" />
     <state width="1277" height="232" key="GridCell.Tab.1.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611668158288" />
-    <state width="1277" height="232" key="GridCell.Tab.1.center" timestamp="1611668158286">
-      <screen x="45" y="23" width="1321" height="745" />
+    <state width="1321" height="286" key="GridCell.Tab.1.center" timestamp="1612257820481">
+      <screen x="43" y="23" width="1323" height="745" />
     </state>
+    <state width="1321" height="286" key="GridCell.Tab.1.center/43.23.1323.745@43.23.1323.745" timestamp="1612257820481" />
     <state width="1277" height="232" key="GridCell.Tab.1.center/45.23.1321.745@45.23.1321.745" timestamp="1611668158286" />
-    <state width="1277" height="232" key="GridCell.Tab.1.left" timestamp="1611668158285">
-      <screen x="45" y="23" width="1321" height="745" />
+    <state width="1321" height="286" key="GridCell.Tab.1.left" timestamp="1612257820480">
+      <screen x="43" y="23" width="1323" height="745" />
     </state>
+    <state width="1321" height="286" key="GridCell.Tab.1.left/43.23.1323.745@43.23.1323.745" timestamp="1612257820480" />
     <state width="1277" height="232" key="GridCell.Tab.1.left/45.23.1321.745@45.23.1321.745" timestamp="1611668158285" />
-    <state width="1277" height="232" key="GridCell.Tab.1.right" timestamp="1611668158287">
-      <screen x="45" y="23" width="1321" height="745" />
+    <state width="1321" height="286" key="GridCell.Tab.1.right" timestamp="1612257820482">
+      <screen x="43" y="23" width="1323" height="745" />
     </state>
+    <state width="1321" height="286" key="GridCell.Tab.1.right/43.23.1323.745@43.23.1323.745" timestamp="1612257820482" />
     <state width="1277" height="232" key="GridCell.Tab.1.right/45.23.1321.745@45.23.1321.745" timestamp="1611668158287" />
     <state x="243" y="57" key="Maven.ArtifactSearchDialog" timestamp="1611996161186">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
     <state x="243" y="57" key="Maven.ArtifactSearchDialog/43.23.1323.745@43.23.1323.745" timestamp="1611996161186" />
-    <state x="113" y="46" key="SettingsEditor" timestamp="1611996142775">
+    <state x="113" y="46" key="SettingsEditor" timestamp="1612258427734">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="113" y="46" key="SettingsEditor/43.23.1323.745@43.23.1323.745" timestamp="1611996142775" />
+    <state x="113" y="46" key="SettingsEditor/43.23.1323.745@43.23.1323.745" timestamp="1612258427734" />
     <state x="115" y="46" key="SettingsEditor/45.23.1321.745@45.23.1321.745" timestamp="1611755046660" />
     <state x="118" y="46" key="SettingsEditor/47.23.1319.745@47.23.1319.745" timestamp="1611746031390" />
     <state x="305" y="124" key="Vcs.Push.Dialog.v2" timestamp="1612245916535">

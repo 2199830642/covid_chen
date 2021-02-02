@@ -6,8 +6,11 @@ import org.apache.kafka.common.Cluster;
 import java.util.Map;
 
 /**
- 自定义分区器指定分区规则(默认是按照key的hash)
- */
+ * @program: covid_chen
+ * @author: XiaoChen
+ * @description:自定义分区器指定分区规则(默认是按照key的hash)
+ * @date: 2021-01-28 14:34
+ **/
 public class CustomerPartitioner implements Partitioner {
     //根据参数按照指定的规则进行分区,返回分区编号即可
     @Override
