@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="kafka接收疫情物资信息">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process/process.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/process/Covid19_WZData_Process.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612607330000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612607330000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612607330000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612607330000.bk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/util/OffsetUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944130000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944130000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944135000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944135000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944140000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944140000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944145000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944145000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944150000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944150000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944130000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944130000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944135000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944135000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944140000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944140000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944145000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944145000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944150000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944150000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/receivedBlockMetadata/log-1612944091408-1612944151408" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/process/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/src/main/scala/chen/study/process/Covid19_WZData_Process.scala" beforeDir="false" afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/process/Covid19_WZData_Process.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612607330000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612607330000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612607330000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612607330000.bk" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +46,7 @@
         <option value="Arquillian JUnit Test Class" />
         <option value="Class" />
         <option value="Kotlin Object" />
+        <option value="Scala Object" />
       </list>
     </option>
   </component>
@@ -106,7 +123,7 @@
       <module name="process" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chen.study.process.*" />
+          <option name="PATTERN" value="chen.study.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -231,7 +248,8 @@
       <workItem from="1612593548445" duration="2269000" />
       <workItem from="1612595906114" duration="7123000" />
       <workItem from="1612606180099" duration="1172000" />
-      <workItem from="1612607438179" duration="128000" />
+      <workItem from="1612607438179" duration="10601000" />
+      <workItem from="1612944439669" duration="960000" />
     </task>
     <task id="LOCAL-00001" summary="爬虫封装">
       <created>1611653917784</created>
@@ -289,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612522172243</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="物资数据实时处理-整合kafka自动提交偏移量">
+      <created>1612933063187</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612933063187</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,9 +330,14 @@
     <MESSAGE value="爬取到的疫情数据也已经可以发送给kafka" />
     <MESSAGE value="定时发送疫情数据" />
     <MESSAGE value="kafka接收疫情物资信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="kafka接收疫情物资信息" />
+    <MESSAGE value="物资数据实时处理-整合kafka自动提交偏移量" />
+    <option name="LAST_COMMIT_MESSAGE" value="物资数据实时处理-整合kafka自动提交偏移量" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="443" y="157" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1612942469722">
+      <screen x="43" y="23" width="1323" height="745" />
+    </state>
+    <state x="443" y="157" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/43.23.1323.745@43.23.1323.745" timestamp="1612942469722" />
     <state x="517" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1611989883671">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
@@ -330,33 +360,33 @@
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state x="429" y="247" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/45.23.1321.745@45.23.1321.745" timestamp="1611754758692" />
-    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1612528939398">
+    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1612933062538">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1612528939398" />
+    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1612933062538" />
     <state x="318" y="23" key="CommitChangelistDialog2/45.23.1321.745@45.23.1321.745" timestamp="1612245912752" />
-    <state width="1321" height="286" key="GridCell.Tab.0.bottom" timestamp="1612607427224">
+    <state width="1321" height="348" key="GridCell.Tab.0.bottom" timestamp="1612945443123">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1612607427224" />
+    <state width="1321" height="348" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1612945443123" />
     <state width="1279" height="594" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1612084730400" />
     <state width="1277" height="427" key="GridCell.Tab.0.bottom/47.23.1319.745@47.23.1319.745" timestamp="1610632042928" />
-    <state width="1321" height="286" key="GridCell.Tab.0.center" timestamp="1612607427222">
+    <state width="1321" height="348" key="GridCell.Tab.0.center" timestamp="1612945443122">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1612607427222" />
+    <state width="1321" height="348" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1612945443122" />
     <state width="1279" height="594" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1612084730398" />
     <state width="1277" height="427" key="GridCell.Tab.0.center/47.23.1319.745@47.23.1319.745" timestamp="1610632042926" />
-    <state width="1321" height="286" key="GridCell.Tab.0.left" timestamp="1612607427219">
+    <state width="1321" height="348" key="GridCell.Tab.0.left" timestamp="1612945443121">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1612607427219" />
+    <state width="1321" height="348" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1612945443121" />
     <state width="1279" height="594" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1612084730395" />
     <state width="1277" height="427" key="GridCell.Tab.0.left/47.23.1319.745@47.23.1319.745" timestamp="1610632042925" />
-    <state width="1321" height="286" key="GridCell.Tab.0.right" timestamp="1612607427222">
+    <state width="1321" height="348" key="GridCell.Tab.0.right" timestamp="1612945443123">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1612607427222" />
+    <state width="1321" height="348" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1612945443123" />
     <state width="1279" height="594" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1612084730399" />
     <state width="1277" height="427" key="GridCell.Tab.0.right/47.23.1319.745@47.23.1319.745" timestamp="1610632042927" />
     <state width="1321" height="286" key="GridCell.Tab.1.bottom" timestamp="1612528965979">
@@ -393,10 +423,10 @@
     <state x="113" y="46" width="982" height="722" key="SettingsEditor/43.23.1323.745@43.23.1323.745" timestamp="1612602752215" />
     <state x="115" y="46" key="SettingsEditor/45.23.1321.745@45.23.1321.745" timestamp="1611755046660" />
     <state x="118" y="46" key="SettingsEditor/47.23.1319.745@47.23.1319.745" timestamp="1611746031390" />
-    <state x="305" y="124" key="Vcs.Push.Dialog.v2" timestamp="1612245916535">
-      <screen x="45" y="23" width="1321" height="745" />
+    <state x="303" y="124" key="Vcs.Push.Dialog.v2" timestamp="1612933069984">
+      <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="303" y="124" key="Vcs.Push.Dialog.v2/43.23.1323.745@43.23.1323.745" timestamp="1612013621372" />
+    <state x="303" y="124" key="Vcs.Push.Dialog.v2/43.23.1323.745@43.23.1323.745" timestamp="1612933069984" />
     <state x="305" y="124" key="Vcs.Push.Dialog.v2/45.23.1321.745@45.23.1321.745" timestamp="1612245916535" />
     <state x="484" y="129" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1611655239472">
       <screen x="45" y="23" width="1321" height="745" />

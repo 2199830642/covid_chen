@@ -1,9 +1,13 @@
 package chen.study.process
 
+import chen.study.util.OffsetUtils
+import org.apache.kafka.common.TopicPartition
 import org.apache.kafka.common.serialization.StringDeserializer
-import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}
+import org.apache.spark.streaming.kafka010.{CanCommitOffsets, ConsumerStrategies, HasOffsetRanges, KafkaUtils, LocationStrategies, OffsetRange}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
+
+import scala.collection.mutable
 
 /**
  * @program: covid_chen
@@ -54,25 +58,63 @@ object Covid19_WZData_Process {
         //latest表示如果记录了偏移量则从记录的位置开始消费，如果没有记录则从最后的位置开始消费
         //earliest表示如果记录了偏移量则从记录的位置开始消费，如果没有记录则从最开始的位置开始消费
         //none表示如果记录了偏移量则从记录的位置开始消费，如果没有记录则报错
-        "enable.auto.commit"->(true:java.lang.Boolean),//是否自动提交偏移量
+        "enable.auto.commit"->(false:java.lang.Boolean),//是否自动提交偏移量
         "key.deserializer"->classOf[StringDeserializer],
         "value.deserializer"->classOf[StringDeserializer]
       )
       val topics: Array[String] = Array("covid19_wz")
 
-      //3.连接kafka获取消息
-      val kafkaDS = KafkaUtils.createDirectStream[String, String](
-        ssc,
-        LocationStrategies.PreferConsistent,
-        ConsumerStrategies.Subscribe[String, String](topics, kafkaParams))
+      //从mysql中查询出offsets：Map[TopicPartition,Long]
+      val offsetsMap: mutable.Map[TopicPartition, Long] = OffsetUtils.getOffsetsMap("SparkKafka", "covid19_wz")
+      val kafkaDS = if (offsetsMap.size>0){
+        println("MySQL中记录了offset信息，从offset处开始消费")
+        //3.连接kafka获取消息
+        KafkaUtils.createDirectStream[String, String](
+          ssc,
+          LocationStrategies.PreferConsistent,
+          ConsumerStrategies.Subscribe[String, String](topics, kafkaParams,offsetsMap))
+      }else{
+        println("MySQL中没有记录了offset信息，从latest处开始消费")
+        KafkaUtils.createDirectStream[String, String](
+          ssc,
+          LocationStrategies.PreferConsistent,
+          ConsumerStrategies.Subscribe[String, String](topics, kafkaParams))
+      }
 
-      //4.实时处理数据
-      val valueDS = kafkaDS.map(_.value())//  _表示从kafka中消费出来的每一条消息
-      valueDS.print()
+
+
+
+      //4.实时处理数据并手动提交偏移量
+
+
 
       //5.将处理分析的结果存入到mysql
 
-      //6.开启SparkStreaming任务并等待结束
+      //6.手动提交偏移量，那就意味着，消费了一次数据就应该提交一次偏移量
+      /*val valueDS = kafkaDS.map(_.value())//  _表示从kafka中消费出来的每一条消息
+      valueDS.print()*/
+      //在sparkStreaming中数据抽象为DStream，DStream的底层其实也就是RDD，也就是每一批次的数据
+      //所以接下来应该对DStream中的RDD进行处理
+      kafkaDS.foreachRDD(rdd=>{
+        if (rdd.count()>0){//如果该rdd中有数据则处理
+          rdd.foreach(record=>println("从kafka中消费到的每一条消息："+record))
+          //从kafka中消费到的每一条消息：ConsumerRecord(topic = covid19_wz, partition = 2, offset = 20, CreateTime = 1612934529992, checksum = 4068548783, serialized key size = -1, serialized value size = 1, key = null, value = 9)
+          //获取偏移量
+          //使用Spark-streaming-kafka-0-10中封装好的API来存放偏移量并提交
+          val offsets:Array[OffsetRange] = rdd.asInstanceOf[HasOffsetRanges].offsetRanges
+          for (o<-offsets){
+            println(s"topic=${o.topic},partition=${o.partition},fromOffsets=${o.fromOffset},until=${o.untilOffset}")
+            //topic=covid19_wz,partition=0,fromOffsets=29,until=30
+            //topic=covid19_wz,partition=2,fromOffsets=21,until=22
+            //topic=covid19_wz,partition=1,fromOffsets=18,until=19
+          }
+          //手动提交偏移量到kafka的默认主题：__consumer__offsets中，如果开启了Checkpoint还会提交到Checkpoint中
+          //kafkaDS.asInstanceOf[CanCommitOffsets].commitAsync(offsets)
+          OffsetUtils.saveOffsets("SparkKafka",offsets)
+        }
+      })
+
+      //7.开启SparkStreaming任务并等待结束
       ssc.start()
       ssc.awaitTermination()
     }
