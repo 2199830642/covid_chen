@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="datasource" />
+        <module name="process" />
         <module name="crawler_chen" />
+        <module name="datasource" />
       </profile>
     </annotationProcessing>
   </component>
