@@ -1,13 +1,16 @@
 package chen.study.process
 
 import chen.study.util.OffsetUtils
+import com.alibaba.fastjson.{JSON, JSONObject}
 import org.apache.kafka.common.TopicPartition
 import org.apache.kafka.common.serialization.StringDeserializer
+import org.apache.spark.streaming.dstream.DStream
 import org.apache.spark.streaming.kafka010.{CanCommitOffsets, ConsumerStrategies, HasOffsetRanges, KafkaUtils, LocationStrategies, OffsetRange}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.collection.mutable
+
 
 /**
  * @program: covid_chen
@@ -85,29 +88,46 @@ object Covid19_WZData_Process {
 
 
       //4.实时处理数据并手动提交偏移量
-
-
+      //val valueDS = kafkaDS.map(_.value())//  _表示从kafka中消费出来的每一条消息
+      //valueDS.print()
+      //4.1将接收到的数据转换为需要的元祖格式
+      val tupleDS: DStream[(String, (Int, Int, Int, Int, Int, Int))] = kafkaDS.map(record => {
+        val jsonStr: String = record.value()
+        val jsonObj: JSONObject = JSON.parseObject(jsonStr)
+        val name: String = jsonObj.getString("name")
+        val from: String = jsonObj.getString("from")
+        val count: Int = jsonObj.getInteger("count")
+        //根据物资来源不同,将count记在不同的位置,最终形成统一的格式
+        from match {
+          case "采购" => (name, (count, 0, 0, 0, 0, count))
+          case "上级下拨" => (name, (0, count, 0, 0, 0, count))
+          case "捐赠" => (name, (0, 0, count, 0, 0, count))
+          case "消耗" => (name, (0, 0, 0, -count, 0, -count))
+          case "需求" => (name, (0, 0, 0, 0, -count, -count))
+        }
+      })
+      tupleDS.print()
+      //将上述格式的数据按照key进行聚合（有状态的计算）--使用updateStateByKey
 
       //5.将处理分析的结果存入到mysql
 
+
       //6.手动提交偏移量，那就意味着，消费了一次数据就应该提交一次偏移量
-      /*val valueDS = kafkaDS.map(_.value())//  _表示从kafka中消费出来的每一条消息
-      valueDS.print()*/
       //在sparkStreaming中数据抽象为DStream，DStream的底层其实也就是RDD，也就是每一批次的数据
       //所以接下来应该对DStream中的RDD进行处理
       kafkaDS.foreachRDD(rdd=>{
         if (rdd.count()>0){//如果该rdd中有数据则处理
-          rdd.foreach(record=>println("从kafka中消费到的每一条消息："+record))
+          //rdd.foreach(record=>println("从kafka中消费到的每一条消息："+record))
           //从kafka中消费到的每一条消息：ConsumerRecord(topic = covid19_wz, partition = 2, offset = 20, CreateTime = 1612934529992, checksum = 4068548783, serialized key size = -1, serialized value size = 1, key = null, value = 9)
           //获取偏移量
           //使用Spark-streaming-kafka-0-10中封装好的API来存放偏移量并提交
           val offsets:Array[OffsetRange] = rdd.asInstanceOf[HasOffsetRanges].offsetRanges
-          for (o<-offsets){
-            println(s"topic=${o.topic},partition=${o.partition},fromOffsets=${o.fromOffset},until=${o.untilOffset}")
+          //for (o<-offsets){
+            //println(s"topic=${o.topic},partition=${o.partition},fromOffsets=${o.fromOffset},until=${o.untilOffset}")
             //topic=covid19_wz,partition=0,fromOffsets=29,until=30
             //topic=covid19_wz,partition=2,fromOffsets=21,until=22
             //topic=covid19_wz,partition=1,fromOffsets=18,until=19
-          }
+          //}
           //手动提交偏移量到kafka的默认主题：__consumer__offsets中，如果开启了Checkpoint还会提交到Checkpoint中
           //kafkaDS.asInstanceOf[CanCommitOffsets].commitAsync(offsets)
           OffsetUtils.saveOffsets("SparkKafka",offsets)

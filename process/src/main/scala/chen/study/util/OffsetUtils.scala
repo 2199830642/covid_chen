@@ -1,6 +1,6 @@
 package chen.study.util
 
-import java.sql.{Connection, DriverManager, PreparedStatement}
+import java.sql.{Connection, DriverManager, PreparedStatement, ResultSet}
 
 import org.apache.kafka.common.TopicPartition
 import org.apache.spark.streaming.kafka010.OffsetRange
@@ -14,6 +14,8 @@ import scala.collection.mutable
  * @date: 2021-02-10 14:00
  **/
 object OffsetUtils {
+
+
   /**
    * 根据参数查询偏移量信息并封装成map返回
    * @param groupId 消费者组名称
@@ -28,20 +30,23 @@ object OffsetUtils {
     //3.获取预编译语句对象
     val ps:PreparedStatement = conn.prepareStatement(sql)
     //4.设置参数并执行
+    //4.设置参数并执行
     ps.setString(1,groupId)
     ps.setString(2,topic)
-    val rs = ps.executeQuery()
+    val rs: ResultSet = ps.executeQuery()
     //5.获取返回值并封装成Map
-    val offsetsMap:mutable.Map[TopicPartition, Long] =mutable. Map[TopicPartition, Long]()
+    val offsetsMap:mutable.Map[TopicPartition, Long] = mutable.Map[TopicPartition, Long]()
     while(rs.next()){
       val partition:Int = rs.getInt("partition")
-      val offset:Int = rs.getInt("offset")
+      val offset: Int = rs.getInt("offset")
       offsetsMap += new TopicPartition(topic,partition) -> offset
     }
-    //6.关闭资源，返回Map
+
+    //6.关闭资源
     rs.close()
     ps.close()
     conn.close()
+    //7.返回Map
     offsetsMap
   }
 

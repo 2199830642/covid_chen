@@ -1,36 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/util/OffsetUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944130000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944130000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944135000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944135000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944140000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944140000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944145000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944145000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944150000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612944150000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944130000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944130000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944135000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944135000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944140000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944140000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944145000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944145000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944150000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612944150000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/receivedBlockMetadata/log-1612944091408-1612944151408" afterDir="false" />
+    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="物资数据实时处理-整合kafka手动维护偏移量">
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612951070000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612951070000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612951075000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612951075000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612951080000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612951080000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612951085000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612951085000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612951090000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1612951090000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612951070000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612951070000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612951075000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612951075000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612951080000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612951080000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612951085000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612951085000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612951090000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1612951090000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sscckp/receivedBlockMetadata/log-1612951056833-1612951116833" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/process/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process/src/main/scala/chen/study/process/Covid19_WZData_Process.scala" beforeDir="false" afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/process/Covid19_WZData_Process.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612607330000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612607330000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612607330000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612607330000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/src/main/scala/chen/study/util/OffsetUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/util/OffsetUtils.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612944130000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612944130000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612944135000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612944135000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612944140000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612944140000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612944145000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612944145000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612944150000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612944150000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612944130000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612944130000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612944135000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612944135000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612944140000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612944140000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612944145000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612944145000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612944150000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612944150000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sscckp/receivedBlockMetadata/log-1612944091408-1612944151408" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +114,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/crawler_chen" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5287187" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -249,7 +265,8 @@
       <workItem from="1612595906114" duration="7123000" />
       <workItem from="1612606180099" duration="1172000" />
       <workItem from="1612607438179" duration="10601000" />
-      <workItem from="1612944439669" duration="960000" />
+      <workItem from="1612944439669" duration="2216000" />
+      <workItem from="1612946814934" duration="4378000" />
     </task>
     <task id="LOCAL-00001" summary="爬虫封装">
       <created>1611653917784</created>
@@ -314,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612933063187</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="物资数据实时处理-整合kafka手动维护偏移量">
+      <created>1612945496240</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612945496242</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,17 +355,18 @@
     <MESSAGE value="定时发送疫情数据" />
     <MESSAGE value="kafka接收疫情物资信息" />
     <MESSAGE value="物资数据实时处理-整合kafka自动提交偏移量" />
-    <option name="LAST_COMMIT_MESSAGE" value="物资数据实时处理-整合kafka自动提交偏移量" />
+    <MESSAGE value="物资数据实时处理-整合kafka手动维护偏移量" />
+    <option name="LAST_COMMIT_MESSAGE" value="物资数据实时处理-整合kafka手动维护偏移量" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="443" y="157" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1612942469722">
+    <state x="443" y="157" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1612947031409">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="443" y="157" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/43.23.1323.745@43.23.1323.745" timestamp="1612942469722" />
-    <state x="517" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1611989883671">
+    <state x="443" y="157" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/43.23.1323.745@43.23.1323.745" timestamp="1612947031409" />
+    <state x="517" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1612947589107">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="517" y="112" key="#com.intellij.ide.util.MemberChooser/43.23.1323.745@43.23.1323.745" timestamp="1611989883671" />
+    <state x="517" y="112" key="#com.intellij.ide.util.MemberChooser/43.23.1323.745@43.23.1323.745" timestamp="1612947589107" />
     <state x="518" y="112" key="#com.intellij.ide.util.MemberChooser/45.23.1321.745@45.23.1321.745" timestamp="1611655233978" />
     <state x="335" y="91" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1611739168459">
       <screen x="45" y="23" width="1321" height="745" />
@@ -351,63 +376,63 @@
       <screen x="43" y="23" width="1323" height="745" />
     </state>
     <state x="478" y="25" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/43.23.1323.745@43.23.1323.745" timestamp="1612606408752" />
-    <state x="302" y="47" key="#项目结构" timestamp="1612606786929">
+    <state x="302" y="47" key="#项目结构" timestamp="1612946608827">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="302" y="47" key="#项目结构/43.23.1323.745@43.23.1323.745" timestamp="1612606786929" />
+    <state x="302" y="47" key="#项目结构/43.23.1323.745@43.23.1323.745" timestamp="1612946608827" />
     <state x="305" y="61" key="#项目结构/45.23.1321.745@45.23.1321.745" timestamp="1611754529203" />
     <state x="429" y="247" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1611754758692">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state x="429" y="247" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/45.23.1321.745@45.23.1321.745" timestamp="1611754758692" />
-    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1612933062538">
+    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1612951377030">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1612933062538" />
+    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1612951377029" />
     <state x="318" y="23" key="CommitChangelistDialog2/45.23.1321.745@45.23.1321.745" timestamp="1612245912752" />
-    <state width="1321" height="348" key="GridCell.Tab.0.bottom" timestamp="1612945443123">
+    <state width="1321" height="187" key="GridCell.Tab.0.bottom" timestamp="1612951379769">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="348" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1612945443123" />
+    <state width="1321" height="187" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1612951379769" />
     <state width="1279" height="594" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1612084730400" />
     <state width="1277" height="427" key="GridCell.Tab.0.bottom/47.23.1319.745@47.23.1319.745" timestamp="1610632042928" />
-    <state width="1321" height="348" key="GridCell.Tab.0.center" timestamp="1612945443122">
+    <state width="1321" height="187" key="GridCell.Tab.0.center" timestamp="1612951379767">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="348" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1612945443122" />
+    <state width="1321" height="187" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1612951379767" />
     <state width="1279" height="594" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1612084730398" />
     <state width="1277" height="427" key="GridCell.Tab.0.center/47.23.1319.745@47.23.1319.745" timestamp="1610632042926" />
-    <state width="1321" height="348" key="GridCell.Tab.0.left" timestamp="1612945443121">
+    <state width="1321" height="187" key="GridCell.Tab.0.left" timestamp="1612951379766">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="348" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1612945443121" />
+    <state width="1321" height="187" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1612951379766" />
     <state width="1279" height="594" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1612084730395" />
     <state width="1277" height="427" key="GridCell.Tab.0.left/47.23.1319.745@47.23.1319.745" timestamp="1610632042925" />
-    <state width="1321" height="348" key="GridCell.Tab.0.right" timestamp="1612945443123">
+    <state width="1321" height="187" key="GridCell.Tab.0.right" timestamp="1612951379768">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="348" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1612945443123" />
+    <state width="1321" height="187" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1612951379768" />
     <state width="1279" height="594" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1612084730399" />
     <state width="1277" height="427" key="GridCell.Tab.0.right/47.23.1319.745@47.23.1319.745" timestamp="1610632042927" />
-    <state width="1321" height="286" key="GridCell.Tab.1.bottom" timestamp="1612528965979">
+    <state width="1321" height="187" key="GridCell.Tab.1.bottom" timestamp="1612951100374">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.1.bottom/43.23.1323.745@43.23.1323.745" timestamp="1612528965979" />
+    <state width="1321" height="187" key="GridCell.Tab.1.bottom/43.23.1323.745@43.23.1323.745" timestamp="1612951100374" />
     <state width="1277" height="232" key="GridCell.Tab.1.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611668158288" />
-    <state width="1321" height="286" key="GridCell.Tab.1.center" timestamp="1612528965978">
+    <state width="1321" height="187" key="GridCell.Tab.1.center" timestamp="1612951100372">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.1.center/43.23.1323.745@43.23.1323.745" timestamp="1612528965978" />
+    <state width="1321" height="187" key="GridCell.Tab.1.center/43.23.1323.745@43.23.1323.745" timestamp="1612951100372" />
     <state width="1277" height="232" key="GridCell.Tab.1.center/45.23.1321.745@45.23.1321.745" timestamp="1611668158286" />
-    <state width="1321" height="286" key="GridCell.Tab.1.left" timestamp="1612528965977">
+    <state width="1321" height="187" key="GridCell.Tab.1.left" timestamp="1612951100366">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.1.left/43.23.1323.745@43.23.1323.745" timestamp="1612528965977" />
+    <state width="1321" height="187" key="GridCell.Tab.1.left/43.23.1323.745@43.23.1323.745" timestamp="1612951100366" />
     <state width="1277" height="232" key="GridCell.Tab.1.left/45.23.1321.745@45.23.1321.745" timestamp="1611668158285" />
-    <state width="1321" height="286" key="GridCell.Tab.1.right" timestamp="1612528965979">
+    <state width="1321" height="187" key="GridCell.Tab.1.right" timestamp="1612951100373">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="286" key="GridCell.Tab.1.right/43.23.1323.745@43.23.1323.745" timestamp="1612528965979" />
+    <state width="1321" height="187" key="GridCell.Tab.1.right/43.23.1323.745@43.23.1323.745" timestamp="1612951100373" />
     <state width="1277" height="232" key="GridCell.Tab.1.right/45.23.1321.745@45.23.1321.745" timestamp="1611668158287" />
     <state x="294" y="137" key="IDE.errors.dialog" timestamp="1612524045193">
       <screen x="43" y="23" width="1323" height="745" />
@@ -423,11 +448,15 @@
     <state x="113" y="46" width="982" height="722" key="SettingsEditor/43.23.1323.745@43.23.1323.745" timestamp="1612602752215" />
     <state x="115" y="46" key="SettingsEditor/45.23.1321.745@45.23.1321.745" timestamp="1611755046660" />
     <state x="118" y="46" key="SettingsEditor/47.23.1319.745@47.23.1319.745" timestamp="1611746031390" />
-    <state x="303" y="124" key="Vcs.Push.Dialog.v2" timestamp="1612933069984">
+    <state x="303" y="124" key="Vcs.Push.Dialog.v2" timestamp="1612945501819">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="303" y="124" key="Vcs.Push.Dialog.v2/43.23.1323.745@43.23.1323.745" timestamp="1612933069984" />
+    <state x="303" y="124" key="Vcs.Push.Dialog.v2/43.23.1323.745@43.23.1323.745" timestamp="1612945501819" />
     <state x="305" y="124" key="Vcs.Push.Dialog.v2/45.23.1321.745@45.23.1321.745" timestamp="1612245916535" />
+    <state x="510" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612951396485">
+      <screen x="43" y="23" width="1323" height="745" />
+    </state>
+    <state x="510" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.23.1323.745@43.23.1323.745" timestamp="1612951396485" />
     <state x="484" y="129" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1611655239472">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
