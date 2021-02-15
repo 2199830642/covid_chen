@@ -2,6 +2,7 @@ package chen.study.util
 
 import java.sql.{Connection, DriverManager, PreparedStatement, ResultSet}
 
+import com.sun.tools.javac.util.Convert
 import org.apache.kafka.common.TopicPartition
 import org.apache.spark.streaming.kafka010.OffsetRange
 

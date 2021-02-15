@@ -26,7 +26,7 @@ public class Covid19DataGenerator {
 
     //物资来源
     private  String[] material_from = new String[]
-            {"采购","上级下拨","捐赠","消耗","需求"};
+            {"采购","下拨","捐赠","消耗","需求"};
 
     @Scheduled(initialDelay = 1000,fixedDelay = 10000)
     public void generator(){
