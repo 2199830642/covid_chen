@@ -2,52 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1613284040000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1613284040000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1613284050000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1613284050000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1613284060000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1613284060000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1613284070000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1613284070000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1613284080000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/.checkpoint-1613284080000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1613284040000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1613284040000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1613284050000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1613284050000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1613284060000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1613284060000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1613284070000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1613284070000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1613284080000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/checkpoint-1613284080000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sscckp/receivedBlockMetadata/log-1613284044900-1613284104900" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/bean/CovidBean.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/bean/StatisticsDataBean.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasource/src/main/java/chen/study/crawler/CovidDataCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/crawler/CovidDataCrawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datasource/src/main/java/chen/study/generator/Covid19DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/datasource/src/main/java/chen/study/generator/Covid19DataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process/src/main/scala/chen/study/process/Covid19_WZData_Process.scala" beforeDir="false" afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/process/Covid19_WZData_Process.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process/src/main/scala/chen/study/util/OffsetUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/util/OffsetUtils.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612951070000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612951070000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612951075000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612951075000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612951080000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612951080000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612951085000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612951085000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612951090000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/.checkpoint-1612951090000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612951070000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612951070000.bk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612951075000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612951075000.bk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612951080000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612951080000.bk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612951085000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612951085000.bk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612951090000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/checkpoint-1612951090000.bk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sscckp/receivedBlockMetadata/log-1612951056833-1612951116833" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/src/main/scala/chen/study/process/Covid19_Data_Process.scala" beforeDir="false" afterPath="$PROJECT_DIR$/process/src/main/scala/chen/study/process/Covid19_Data_Process.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,17 +84,31 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="chen.study" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="chen.study.util" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="chen.study.bean" />
+      <recent name="chen.study.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/crawler_chen" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DatasourceApplication">
+  <component name="RunManager" selected="Application.Covid19_Data_Process">
+    <configuration name="Covid19_Data_Process" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="chen.study.process.Covid19_Data_Process" />
+      <module name="process" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chen.study.process.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Covid19_WZData_Process" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="chen.study.process.Covid19_WZData_Process" />
       <module name="process" />
@@ -177,22 +151,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CovidDataCrawler.testKafkaTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="datasource" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chen.study.crawler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chen.study.crawler" />
-      <option name="MAIN_CLASS_NAME" value="chen.study.crawler.CovidDataCrawler" />
-      <option name="METHOD_NAME" value="testKafkaTemplate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="process" />
       <option name="allowRunningInParallel" value="false" />
@@ -212,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Covid19_Data_Process" />
         <item itemvalue="Application.Covid19_WZData_Process" />
         <item itemvalue="Scala REPL.Scala REPL" />
         <item itemvalue="Application.SchedulerTest" />
         <item itemvalue="JUnit.CovidDataCrawler.test" />
-        <item itemvalue="JUnit.CovidDataCrawler.testKafkaTemplate" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +225,7 @@
       <workItem from="1612606180099" duration="1172000" />
       <workItem from="1612607438179" duration="10601000" />
       <workItem from="1612944439669" duration="2216000" />
-      <workItem from="1612946814934" duration="15383000" />
+      <workItem from="1612946814934" duration="21714000" />
     </task>
     <task id="LOCAL-00001" summary="爬虫封装">
       <created>1611653917784</created>
@@ -346,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612951462041</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="物资数据实时处理-将获得的疫情物资信息消费后存入mysql数据库">
+      <created>1613370915977</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1613370915977</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +330,8 @@
     <MESSAGE value="物资数据实时处理-整合kafka自动提交偏移量" />
     <MESSAGE value="物资数据实时处理-整合kafka手动维护偏移量" />
     <MESSAGE value="物资数据实时处理-对疫情物资数据进行格式处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="物资数据实时处理-对疫情物资数据进行格式处理" />
+    <MESSAGE value="物资数据实时处理-将获得的疫情物资信息消费后存入mysql数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="物资数据实时处理-将获得的疫情物资信息消费后存入mysql数据库" />
   </component>
   <component name="WindowStateProjectService">
     <state x="443" y="157" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1613283431998">
@@ -394,58 +360,58 @@
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state x="429" y="247" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/45.23.1321.745@45.23.1321.745" timestamp="1611754758692" />
-    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1612951460693">
+    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1613370915113">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1612951460693" />
+    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1613370915113" />
     <state x="318" y="23" key="CommitChangelistDialog2/45.23.1321.745@45.23.1321.745" timestamp="1612245912752" />
     <state x="168" y="86" key="DiffContextDialog" timestamp="1612951409038">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
     <state x="168" y="86" key="DiffContextDialog/43.23.1323.745@43.23.1323.745" timestamp="1612951409038" />
-    <state width="1321" height="226" key="GridCell.Tab.0.bottom" timestamp="1613370703464">
+    <state width="1321" height="361" key="GridCell.Tab.0.bottom" timestamp="1613556266411">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="226" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1613370703464" />
+    <state width="1321" height="361" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1613556266411" />
     <state width="1279" height="594" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1612084730400" />
     <state width="1277" height="427" key="GridCell.Tab.0.bottom/47.23.1319.745@47.23.1319.745" timestamp="1610632042928" />
-    <state width="1321" height="226" key="GridCell.Tab.0.center" timestamp="1613370703462">
+    <state width="1321" height="361" key="GridCell.Tab.0.center" timestamp="1613556266409">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="226" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1613370703462" />
+    <state width="1321" height="361" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1613556266409" />
     <state width="1279" height="594" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1612084730398" />
     <state width="1277" height="427" key="GridCell.Tab.0.center/47.23.1319.745@47.23.1319.745" timestamp="1610632042926" />
-    <state width="1321" height="226" key="GridCell.Tab.0.left" timestamp="1613370703461">
+    <state width="1321" height="361" key="GridCell.Tab.0.left" timestamp="1613556266408">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="226" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1613370703461" />
+    <state width="1321" height="361" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1613556266408" />
     <state width="1279" height="594" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1612084730395" />
     <state width="1277" height="427" key="GridCell.Tab.0.left/47.23.1319.745@47.23.1319.745" timestamp="1610632042925" />
-    <state width="1321" height="226" key="GridCell.Tab.0.right" timestamp="1613370703463">
+    <state width="1321" height="361" key="GridCell.Tab.0.right" timestamp="1613556266410">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="226" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1613370703463" />
+    <state width="1321" height="361" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1613556266410" />
     <state width="1279" height="594" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1612084730399" />
     <state width="1277" height="427" key="GridCell.Tab.0.right/47.23.1319.745@47.23.1319.745" timestamp="1610632042927" />
-    <state width="1321" height="185" key="GridCell.Tab.1.bottom" timestamp="1613284137822">
+    <state width="1321" height="609" key="GridCell.Tab.1.bottom" timestamp="1613555948695">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="185" key="GridCell.Tab.1.bottom/43.23.1323.745@43.23.1323.745" timestamp="1613284137822" />
+    <state width="1321" height="609" key="GridCell.Tab.1.bottom/43.23.1323.745@43.23.1323.745" timestamp="1613555948695" />
     <state width="1277" height="232" key="GridCell.Tab.1.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611668158288" />
-    <state width="1321" height="185" key="GridCell.Tab.1.center" timestamp="1613284137818">
+    <state width="1321" height="609" key="GridCell.Tab.1.center" timestamp="1613555948674">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="185" key="GridCell.Tab.1.center/43.23.1323.745@43.23.1323.745" timestamp="1613284137818" />
+    <state width="1321" height="609" key="GridCell.Tab.1.center/43.23.1323.745@43.23.1323.745" timestamp="1613555948674" />
     <state width="1277" height="232" key="GridCell.Tab.1.center/45.23.1321.745@45.23.1321.745" timestamp="1611668158286" />
-    <state width="1321" height="185" key="GridCell.Tab.1.left" timestamp="1613284137816">
+    <state width="1321" height="609" key="GridCell.Tab.1.left" timestamp="1613555948671">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="185" key="GridCell.Tab.1.left/43.23.1323.745@43.23.1323.745" timestamp="1613284137816" />
+    <state width="1321" height="609" key="GridCell.Tab.1.left/43.23.1323.745@43.23.1323.745" timestamp="1613555948671" />
     <state width="1277" height="232" key="GridCell.Tab.1.left/45.23.1321.745@45.23.1321.745" timestamp="1611668158285" />
-    <state width="1321" height="185" key="GridCell.Tab.1.right" timestamp="1613284137821">
+    <state width="1321" height="609" key="GridCell.Tab.1.right" timestamp="1613555948677">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1321" height="185" key="GridCell.Tab.1.right/43.23.1323.745@43.23.1323.745" timestamp="1613284137821" />
+    <state width="1321" height="609" key="GridCell.Tab.1.right/43.23.1323.745@43.23.1323.745" timestamp="1613555948677" />
     <state width="1277" height="232" key="GridCell.Tab.1.right/45.23.1321.745@45.23.1321.745" timestamp="1611668158287" />
     <state x="294" y="137" key="IDE.errors.dialog" timestamp="1612524045193">
       <screen x="43" y="23" width="1323" height="745" />
@@ -461,10 +427,10 @@
     <state x="113" y="46" width="982" height="722" key="SettingsEditor/43.23.1323.745@43.23.1323.745" timestamp="1612602752215" />
     <state x="115" y="46" key="SettingsEditor/45.23.1321.745@45.23.1321.745" timestamp="1611755046660" />
     <state x="118" y="46" key="SettingsEditor/47.23.1319.745@47.23.1319.745" timestamp="1611746031390" />
-    <state x="303" y="124" key="Vcs.Push.Dialog.v2" timestamp="1612951467952">
+    <state x="303" y="124" key="Vcs.Push.Dialog.v2" timestamp="1613370918655">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="303" y="124" key="Vcs.Push.Dialog.v2/43.23.1323.745@43.23.1323.745" timestamp="1612951467952" />
+    <state x="303" y="124" key="Vcs.Push.Dialog.v2/43.23.1323.745@43.23.1323.745" timestamp="1613370918655" />
     <state x="305" y="124" key="Vcs.Push.Dialog.v2/45.23.1321.745@45.23.1321.745" timestamp="1612245916535" />
     <state x="510" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612951396485">
       <screen x="43" y="23" width="1323" height="745" />
@@ -485,6 +451,10 @@
     <state x="131" y="105" key="new project wizard/43.23.1323.745@43.23.1323.745" timestamp="1612593757243" />
     <state x="133" y="105" key="new project wizard/45.23.1321.745@45.23.1321.745" timestamp="1611754499867" />
     <state x="138" y="176" key="new project wizard/47.23.1319.745@47.23.1319.745" timestamp="1611752811499" />
+    <state x="370" y="92" width="670" height="676" key="search.everywhere.popup" timestamp="1613554055588">
+      <screen x="43" y="23" width="1323" height="745" />
+    </state>
+    <state x="370" y="92" width="670" height="676" key="search.everywhere.popup/43.23.1323.745@43.23.1323.745" timestamp="1613554055588" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

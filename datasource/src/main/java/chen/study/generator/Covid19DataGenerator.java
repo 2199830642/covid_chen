@@ -28,7 +28,7 @@ public class Covid19DataGenerator {
     private  String[] material_from = new String[]
             {"采购","下拨","捐赠","消耗","需求"};
 
-    @Scheduled(initialDelay = 1000,fixedDelay = 10000)
+    //@Scheduled(initialDelay = 1000,fixedDelay = 10000)
     public void generator(){
         Random ran = new Random();
         for (int i = 0 ; i < 10;i++){

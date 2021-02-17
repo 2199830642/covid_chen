@@ -42,10 +42,10 @@ public class CovidDataCrawler {
     }
 
     //每天早上八点爬取疫情数据
-    //@Scheduled(initialDelay = 1000,fixedDelay = 1000)
+    @Scheduled(initialDelay = 1000,fixedDelay = 1000*60*60*24)
     //@Scheduled(cron = "0/1 * * * * ?")//每隔一秒执行一次
     //@Scheduled(cron = "0/5 * * * * ?")//每隔五秒执行一次
-    @Scheduled(cron = "0 0 8 * * ?")
+    //@Scheduled(cron = "0 0 8 * * ?")
     public void test() throws Exception {
         String dateTime = TimeUtils.format(System.currentTimeMillis(), "yyyy-MM-dd");
 
