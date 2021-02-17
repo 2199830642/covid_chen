@@ -2,7 +2,7 @@ package chen.study.process
 
 import chen.study.bean.{CovidBean, StatisticsDataBean}
 import com.alibaba.fastjson.JSON
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}
 import org.apache.spark.sql.streaming.Trigger
 
 import scala.collection.mutable
@@ -71,7 +71,88 @@ object Covid19_Data_Process {
       .option("truncate",false)//表示如果列名过长，不进行截断
       .start()
       .awaitTermination()*/
+
+
     //4.统计分析
+    //4.1.全国疫情汇总信息:现有确诊,累计确诊,现有疑似,累计治愈,累计死亡--注意:按照日期分组统计
+    val result1: DataFrame = provinceDS.groupBy('datetime)
+      .agg(sum('currentConfirmedCount) as "currentConfirmedCount", //现有确诊
+        sum('confirmedCount) as "confirmedCount", //累计确诊
+        sum('suspectedCount) as "suspectedCount", //现有疑似
+        sum('curedCount) as "curedCount", //累计治愈
+        sum('deadCount) as "deadCount" //累计死亡
+      )
+
+    //4.2.全国各省份累计确诊数地图--注意:按照日期-省份分组
+    /*cityDS.groupBy('datetime,'provinceShortName)
+      .agg(sum('confirmedCount) as "confirmedCount")*/
+    val result2: DataFrame = provinceDS.select('datetime,'locationId,'provinceShortName,'currentConfirmedCount,'confirmedCount,'suspectedCount,'curedCount,'deadCount)
+
+    //4.3.全国疫情趋势--注意:按照日期分组聚合
+    val result3: DataFrame = statisticsDataDS.groupBy('dateId)
+      .agg(
+        sum('confirmedIncr) as "confirmedIncr", //新增确诊
+        sum('confirmedCount) as "confirmedCount", //累计确诊
+        sum('suspectedCount) as "suspectedCount", //累计疑似
+        sum('curedCount) as "curedCount", //累计治愈
+        sum('deadCount) as "deadCount" //累计死亡
+      )
+
+    //4.4.境外输入排行--注意:按照日期-城市分组聚合
+    val result4: Dataset[Row] = cityDS.filter(_.cityName.contains("境外输入"))
+      .groupBy('datetime, 'provinceShortName, 'pid)
+      .agg(sum('confirmedCount) as "confirmedCount")
+      .sort('confirmedCount.desc)
+
+    //4.5.统计北京市的累计确诊地图
+    val result5: DataFrame = cityDS.filter(_.provinceShortName.equals("北京")).select('datetime,'locationId,'provinceShortName,'cityName,'currentConfirmedCount,'confirmedCount,'suspectedCount,'curedCount,'deadCount)
+    //.....
+
+
+    //5.结果输出--先输出到控制台观察,最终输出到MySQL
+    /*result1.writeStream
+      .format("console")
+      //输出模式:
+      //1.append:默认的,表示只输出新增的数据,只支持简单的查询,不支持聚合
+      //2.complete:表示完整模式,所有数据都会输出,必须包含聚合操作
+      //3.update:表示更新模式,只输出有变化的数据,不支持排序
+      .outputMode("complete")
+      .trigger(Trigger.ProcessingTime(0))
+      .option("truncate",false)
+      .start()
+      //.awaitTermination()
+
+    result2.writeStream
+      .format("console")
+      .outputMode("append")
+      .trigger(Trigger.ProcessingTime(0))
+      .option("truncate",false)
+      .start()
+      //.awaitTermination()
+
+    result3.writeStream
+      .format("console")
+      .outputMode("complete")
+      .trigger(Trigger.ProcessingTime(0))
+      .option("truncate",false)
+      .start()
+      .awaitTermination()
+
+    result4.writeStream
+      .format("console")
+      .outputMode("complete")
+      .trigger(Trigger.ProcessingTime(0))
+      .option("truncate",false)
+      .start()
+      .awaitTermination()*/
+
+    result5.writeStream
+      .format("console")
+      .outputMode("append")
+      .trigger(Trigger.ProcessingTime(0))
+      .option("truncate",false)
+      .start()
+      .awaitTermination()
 
     //5.结果输出
 
