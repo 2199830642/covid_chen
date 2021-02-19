@@ -1,8 +1,9 @@
 package chen.study.process
 
 import chen.study.bean.{CovidBean, StatisticsDataBean}
+import chen.study.util.BaseJdbcSink
 import com.alibaba.fastjson.JSON
-import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}
+import org.apache.spark.sql.{DataFrame, Dataset, ForeachWriter, Row, SparkSession}
 import org.apache.spark.sql.streaming.Trigger
 
 import scala.collection.mutable
@@ -120,9 +121,36 @@ object Covid19_Data_Process {
       .trigger(Trigger.ProcessingTime(0))
       .option("truncate",false)
       .start()
+      .awaitTermination()*/
+    result1.writeStream
+      .foreach(new BaseJdbcSink("replace into covid19_1 (datetime,currentConfirmedCount,confirmedCount,suspectedCount,curedCount,deadCount) values(?,?,?,?,?,?)") {
+        override def realProcess(sql: String, row: Row): Unit = {
+          //取出row中的数据
+          val datetime: String = row.getAs[String]("datetime")
+          val currentConfirmedCount: Long = row.getAs[Long]("currentConfirmedCount")
+          val confirmedCount: Long = row.getAs[Long]("confirmedCount")
+          val suspectedCount: Long = row.getAs[Long]("suspectedCount")
+          val curedCount: Long = row.getAs[Long]("curedCount")
+          val deadCount: Long = row.getAs[Long]("deadCount")
+          //获取预编译语句对象
+          ps = conn.prepareStatement(sql)
+          //给sql设置参数值
+          ps.setString(1,datetime)
+          ps.setLong(2,currentConfirmedCount)
+          ps.setLong(3,confirmedCount)
+          ps.setLong(4,suspectedCount)
+          ps.setLong(5,curedCount)
+          ps.setLong(6,deadCount)
+          ps.executeUpdate()
+        }
+      })
+      .outputMode("complete")
+      .trigger(Trigger.ProcessingTime(0))
+      .option("truncate",false)
+      .start()
       //.awaitTermination()
 
-    result2.writeStream
+    /*result2.writeStream
       .format("console")
       .outputMode("append")
       .trigger(Trigger.ProcessingTime(0))
@@ -144,7 +172,7 @@ object Covid19_Data_Process {
       .trigger(Trigger.ProcessingTime(0))
       .option("truncate",false)
       .start()
-      .awaitTermination()*/
+      .awaitTermination()
 
     result5.writeStream
       .format("console")
@@ -152,9 +180,117 @@ object Covid19_Data_Process {
       .trigger(Trigger.ProcessingTime(0))
       .option("truncate",false)
       .start()
-      .awaitTermination()
+      .awaitTermination()*/
 
-    //5.结果输出
+    result2.writeStream
+      .foreach(new BaseJdbcSink("replace into covid19_2 (datetime,locationId,provinceShortName,currentConfirmedCount,confirmedCount,suspectedCount,curedCount,deadCount) values(?,?,?,?,?,?,?,?)") {
+        override def realProcess(sql: String, row: Row): Unit = {
+          val datetime: String = row.getAs[String]("datetime")
+          val locationId: Int = row.getAs[Int]("locationId")
+          val provinceShortName: String = row.getAs[String]("provinceShortName")
+          val currentConfirmedCount: Int = row.getAs[Int]("currentConfirmedCount")
+          val confirmedCount: Int = row.getAs[Int]("confirmedCount")
+          val suspectedCount: Int = row.getAs[Int]("suspectedCount")
+          val curedCount: Int = row.getAs[Int]("curedCount")
+          val deadCount: Int = row.getAs[Int]("deadCount")
+          ps = conn.prepareStatement(sql)
+          ps.setString(1,datetime)
+          ps.setInt(2,locationId)
+          ps.setString(3,provinceShortName)
+          ps.setInt(4,currentConfirmedCount)
+          ps.setInt(5,confirmedCount)
+          ps.setInt(6,suspectedCount)
+          ps.setInt(7,curedCount)
+          ps.setInt(8,deadCount)
+          ps.executeUpdate()
+        }
+      })
+      .outputMode("append")
+      .trigger(Trigger.ProcessingTime(0))
+      .option("truncate",false)
+      .start()
+
+    result3.writeStream
+      .foreach(new BaseJdbcSink("replace into covid19_3 (dateId,confirmedIncr,confirmedCount,suspectedCount,curedCount,deadCount) values(?,?,?,?,?,?)") {
+        override def realProcess(sql: String, row: Row): Unit = {
+          //取出row中的数据
+          val dateId: String = row.getAs[String]("dateId")
+          val confirmedIncr: Long = row.getAs[Long]("confirmedIncr")
+          val confirmedCount: Long = row.getAs[Long]("confirmedCount")
+          val suspectedCount: Long = row.getAs[Long]("suspectedCount")
+          val curedCount: Long = row.getAs[Long]("curedCount")
+          val deadCount: Long = row.getAs[Long]("deadCount")
+          //获取预编译语句对象
+          ps = conn.prepareStatement(sql)
+          //给sql设置参数值
+          ps.setString(1,dateId)
+          ps.setLong(2,confirmedIncr)
+          ps.setLong(3,confirmedCount)
+          ps.setLong(4,suspectedCount)
+          ps.setLong(5,curedCount)
+          ps.setLong(6,deadCount)
+          ps.executeUpdate()
+        }
+      })
+      .outputMode("complete")
+      .trigger(Trigger.ProcessingTime(0))
+      .option("truncate",false)
+      .start()
+
+
+    result4.writeStream
+      .foreach(new BaseJdbcSink("replace into covid19_4 (datetime,provinceShortName,pid,confirmedCount) values(?,?,?,?)") {
+        override def realProcess(sql: String, row: Row): Unit = {
+          //取出row中的数据
+          val datetime: String = row.getAs[String]("datetime")
+          val provinceShortName: String = row.getAs[String]("provinceShortName")
+          val pid: Int = row.getAs[Int]("pid")
+          val confirmedCount: Long = row.getAs[Long]("confirmedCount")
+          //获取预编译语句对象
+          ps = conn.prepareStatement(sql)
+          //给sql设置参数值
+          ps.setString(1,datetime)
+          ps.setString(2,provinceShortName)
+          ps.setInt(3,pid)
+          ps.setLong(4,confirmedCount)
+          ps.executeUpdate()
+        }
+      })
+      .outputMode("complete")
+      .trigger(Trigger.ProcessingTime(0))
+      .option("truncate",false)
+      .start()
+
+    result5.writeStream
+      .foreach(new BaseJdbcSink("replace into covid19_5 (datetime,locationId,provinceShortName,cityName,currentConfirmedCount,confirmedCount,suspectedCount,curedCount,deadCount) values(?,?,?,?,?,?,?,?,?)") {
+        override def realProcess(sql: String, row: Row): Unit = {
+          val datetime: String = row.getAs[String]("datetime")
+          val locationId: Int = row.getAs[Int]("locationId")
+          val provinceShortName: String = row.getAs[String]("provinceShortName")
+          val cityName: String = row.getAs[String]("cityName")
+          val currentConfirmedCount: Int = row.getAs[Int]("currentConfirmedCount")
+          val confirmedCount: Int = row.getAs[Int]("confirmedCount")
+          val suspectedCount: Int = row.getAs[Int]("suspectedCount")
+          val curedCount: Int = row.getAs[Int]("curedCount")
+          val deadCount: Int = row.getAs[Int]("deadCount")
+          ps = conn.prepareStatement(sql)
+          ps.setString(1,datetime)
+          ps.setInt(2,locationId)
+          ps.setString(3,provinceShortName)
+          ps.setString(4,cityName)
+          ps.setInt(5,currentConfirmedCount)
+          ps.setInt(6,confirmedCount)
+          ps.setInt(7,suspectedCount)
+          ps.setInt(8,curedCount)
+          ps.setInt(9,deadCount)
+          ps.executeUpdate()
+        }
+      })
+      .outputMode("append")
+      .trigger(Trigger.ProcessingTime(0))
+      .option("truncate",false)
+      .start()
+      .awaitTermination()
 
   }
 
