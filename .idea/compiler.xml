@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="process" />
+        <module name="webui" />
         <module name="crawler_chen" />
         <module name="datasource" />
       </profile>
