@@ -2,46 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/webui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/WebuiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/controller/Covid19Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/china.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/resources/static/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/test/java/chen/study/webui/WebuiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/bean/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/mapper/CovidMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/controller/Covid19Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/controller/Covid19Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webui/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/webui/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,18 +136,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CovidDataCrawler.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="datasource" />
+    <configuration name="webui 中的 chen.study.webui.mapper " type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chen.study.crawler.*" />
+          <option name="PATTERN" value="chen.study.webui.mapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chen.study.crawler" />
-      <option name="MAIN_CLASS_NAME" value="chen.study.crawler.CovidDataCrawler" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="chen.study.webui.mapper" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -213,10 +177,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Covid19_Data_Process" />
+        <item itemvalue="JUnit.webui 中的 chen.study.webui.mapper " />
         <item itemvalue="Application.Covid19_WZData_Process" />
         <item itemvalue="Scala REPL.Scala REPL" />
         <item itemvalue="Application.SchedulerTest" />
-        <item itemvalue="JUnit.CovidDataCrawler.test" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +232,7 @@
       <workItem from="1612607438179" duration="10601000" />
       <workItem from="1612944439669" duration="2216000" />
       <workItem from="1612946814934" duration="24663000" />
-      <workItem from="1613566239818" duration="11525000" />
+      <workItem from="1613566239818" duration="15867000" />
     </task>
     <task id="LOCAL-00001" summary="爬虫封装">
       <created>1611653917784</created>
@@ -375,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613712740135</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="数据可视化--SpringBoot项目流程测试">
+      <created>1613806264535</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1613806264535</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +369,8 @@
     <MESSAGE value="疫情数据实时处理-各省市数据预处理" />
     <MESSAGE value="疫情数据实时处理-各种疫情数据爬取后控制台展示" />
     <MESSAGE value="疫情数据实时处理-各种疫情数据传输进MySQL数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="疫情数据实时处理-各种疫情数据传输进MySQL数据库" />
+    <MESSAGE value="数据可视化--SpringBoot项目流程测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据可视化--SpringBoot项目流程测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="443" y="157" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1613625169127">
@@ -428,58 +400,58 @@
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state x="429" y="247" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/45.23.1321.745@45.23.1321.745" timestamp="1611754758692" />
-    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1613712738892">
+    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1613806262930">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1613712738892" />
+    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1613806262930" />
     <state x="318" y="23" key="CommitChangelistDialog2/45.23.1321.745@45.23.1321.745" timestamp="1612245912752" />
     <state x="168" y="86" key="DiffContextDialog" timestamp="1612951409038">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
     <state x="168" y="86" key="DiffContextDialog/43.23.1323.745@43.23.1323.745" timestamp="1612951409038" />
-    <state width="1323" height="305" key="GridCell.Tab.0.bottom" timestamp="1613805563685">
+    <state width="1323" height="245" key="GridCell.Tab.0.bottom" timestamp="1614158248016">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="305" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1613805563685" />
+    <state width="1323" height="245" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1614158248016" />
     <state width="1279" height="594" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1612084730400" />
     <state width="1277" height="427" key="GridCell.Tab.0.bottom/47.23.1319.745@47.23.1319.745" timestamp="1610632042928" />
-    <state width="1323" height="305" key="GridCell.Tab.0.center" timestamp="1613805563684">
+    <state width="1323" height="245" key="GridCell.Tab.0.center" timestamp="1614158248015">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="305" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1613805563684" />
+    <state width="1323" height="245" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1614158248015" />
     <state width="1279" height="594" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1612084730398" />
     <state width="1277" height="427" key="GridCell.Tab.0.center/47.23.1319.745@47.23.1319.745" timestamp="1610632042926" />
-    <state width="1323" height="305" key="GridCell.Tab.0.left" timestamp="1613805563683">
+    <state width="1323" height="245" key="GridCell.Tab.0.left" timestamp="1614158248014">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="305" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1613805563683" />
+    <state width="1323" height="245" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1614158248014" />
     <state width="1279" height="594" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1612084730395" />
     <state width="1277" height="427" key="GridCell.Tab.0.left/47.23.1319.745@47.23.1319.745" timestamp="1610632042925" />
-    <state width="1323" height="305" key="GridCell.Tab.0.right" timestamp="1613805563684">
+    <state width="1323" height="245" key="GridCell.Tab.0.right" timestamp="1614158248015">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="305" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1613805563684" />
+    <state width="1323" height="245" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1614158248015" />
     <state width="1279" height="594" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1612084730399" />
     <state width="1277" height="427" key="GridCell.Tab.0.right/47.23.1319.745@47.23.1319.745" timestamp="1610632042927" />
-    <state width="1323" height="305" key="GridCell.Tab.1.bottom" timestamp="1613805563687">
+    <state width="1323" height="245" key="GridCell.Tab.1.bottom" timestamp="1614158248019">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="305" key="GridCell.Tab.1.bottom/43.23.1323.745@43.23.1323.745" timestamp="1613805563687" />
+    <state width="1323" height="245" key="GridCell.Tab.1.bottom/43.23.1323.745@43.23.1323.745" timestamp="1614158248019" />
     <state width="1277" height="232" key="GridCell.Tab.1.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611668158288" />
-    <state width="1323" height="305" key="GridCell.Tab.1.center" timestamp="1613805563686">
+    <state width="1323" height="245" key="GridCell.Tab.1.center" timestamp="1614158248017">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="305" key="GridCell.Tab.1.center/43.23.1323.745@43.23.1323.745" timestamp="1613805563686" />
+    <state width="1323" height="245" key="GridCell.Tab.1.center/43.23.1323.745@43.23.1323.745" timestamp="1614158248017" />
     <state width="1277" height="232" key="GridCell.Tab.1.center/45.23.1321.745@45.23.1321.745" timestamp="1611668158286" />
-    <state width="1323" height="305" key="GridCell.Tab.1.left" timestamp="1613805563686">
+    <state width="1323" height="245" key="GridCell.Tab.1.left" timestamp="1614158248016">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="305" key="GridCell.Tab.1.left/43.23.1323.745@43.23.1323.745" timestamp="1613805563686" />
+    <state width="1323" height="245" key="GridCell.Tab.1.left/43.23.1323.745@43.23.1323.745" timestamp="1614158248016" />
     <state width="1277" height="232" key="GridCell.Tab.1.left/45.23.1321.745@45.23.1321.745" timestamp="1611668158285" />
-    <state width="1323" height="305" key="GridCell.Tab.1.right" timestamp="1613805563686">
+    <state width="1323" height="245" key="GridCell.Tab.1.right" timestamp="1614158248018">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="305" key="GridCell.Tab.1.right/43.23.1323.745@43.23.1323.745" timestamp="1613805563686" />
+    <state width="1323" height="245" key="GridCell.Tab.1.right/43.23.1323.745@43.23.1323.745" timestamp="1614158248018" />
     <state width="1277" height="232" key="GridCell.Tab.1.right/45.23.1321.745@45.23.1321.745" timestamp="1611668158287" />
     <state x="294" y="137" key="IDE.errors.dialog" timestamp="1612524045193">
       <screen x="43" y="23" width="1323" height="745" />
@@ -495,10 +467,10 @@
     <state x="113" y="46" width="982" height="722" key="SettingsEditor/43.23.1323.745@43.23.1323.745" timestamp="1613805449396" />
     <state x="115" y="46" key="SettingsEditor/45.23.1321.745@45.23.1321.745" timestamp="1611755046660" />
     <state x="118" y="46" key="SettingsEditor/47.23.1319.745@47.23.1319.745" timestamp="1611746031390" />
-    <state x="303" y="124" key="Vcs.Push.Dialog.v2" timestamp="1613712742634">
+    <state x="303" y="124" key="Vcs.Push.Dialog.v2" timestamp="1613806267598">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="303" y="124" key="Vcs.Push.Dialog.v2/43.23.1323.745@43.23.1323.745" timestamp="1613712742634" />
+    <state x="303" y="124" key="Vcs.Push.Dialog.v2/43.23.1323.745@43.23.1323.745" timestamp="1613806267598" />
     <state x="305" y="124" key="Vcs.Push.Dialog.v2/45.23.1321.745@45.23.1321.745" timestamp="1612245916535" />
     <state x="510" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612951396485">
       <screen x="43" y="23" width="1323" height="745" />
