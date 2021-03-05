@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/bean/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/mapper/CovidMapper.java" afterDir="false" />
+    <list default="true" id="f19ff22d-8f39-4b3e-9320-0373b81146b7" name="默认更改列表" comment="数据可视化--全国疫情汇总信息展示">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webui/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/controller/Covid19Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/controller/Covid19Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webui/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/webui/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/mapper/CovidMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webui/src/main/java/chen/study/webui/mapper/CovidMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webui/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webui/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +230,8 @@
       <workItem from="1612607438179" duration="10601000" />
       <workItem from="1612944439669" duration="2216000" />
       <workItem from="1612946814934" duration="24663000" />
-      <workItem from="1613566239818" duration="15867000" />
+      <workItem from="1613566239818" duration="18576000" />
+      <workItem from="1614161399508" duration="9134000" />
     </task>
     <task id="LOCAL-00001" summary="爬虫封装">
       <created>1611653917784</created>
@@ -346,11 +345,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613806264535</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="数据可视化--全国疫情汇总信息展示">
+      <created>1614158875926</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614158875926</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -370,7 +379,8 @@
     <MESSAGE value="疫情数据实时处理-各种疫情数据爬取后控制台展示" />
     <MESSAGE value="疫情数据实时处理-各种疫情数据传输进MySQL数据库" />
     <MESSAGE value="数据可视化--SpringBoot项目流程测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据可视化--SpringBoot项目流程测试" />
+    <MESSAGE value="数据可视化--全国疫情汇总信息展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据可视化--全国疫情汇总信息展示" />
   </component>
   <component name="WindowStateProjectService">
     <state x="443" y="157" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1613625169127">
@@ -391,67 +401,67 @@
       <screen x="43" y="23" width="1323" height="745" />
     </state>
     <state x="478" y="25" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/43.23.1323.745@43.23.1323.745" timestamp="1612606408752" />
-    <state x="302" y="47" key="#项目结构" timestamp="1612946608827">
+    <state x="302" y="47" key="#项目结构" timestamp="1614158900172">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="302" y="47" key="#项目结构/43.23.1323.745@43.23.1323.745" timestamp="1612946608827" />
+    <state x="302" y="47" key="#项目结构/43.23.1323.745@43.23.1323.745" timestamp="1614158900172" />
     <state x="305" y="61" key="#项目结构/45.23.1321.745@45.23.1321.745" timestamp="1611754529203" />
     <state x="429" y="247" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1611754758692">
       <screen x="45" y="23" width="1321" height="745" />
     </state>
     <state x="429" y="247" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/45.23.1321.745@45.23.1321.745" timestamp="1611754758692" />
-    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1613806262930">
+    <state x="316" y="23" key="CommitChangelistDialog2" timestamp="1614161653245">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1613806262930" />
+    <state x="316" y="23" key="CommitChangelistDialog2/43.23.1323.745@43.23.1323.745" timestamp="1614161653245" />
     <state x="318" y="23" key="CommitChangelistDialog2/45.23.1321.745@45.23.1321.745" timestamp="1612245912752" />
     <state x="168" y="86" key="DiffContextDialog" timestamp="1612951409038">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
     <state x="168" y="86" key="DiffContextDialog/43.23.1323.745@43.23.1323.745" timestamp="1612951409038" />
-    <state width="1323" height="245" key="GridCell.Tab.0.bottom" timestamp="1614158248016">
+    <state width="1323" height="214" key="GridCell.Tab.0.bottom" timestamp="1614445869981">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="245" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1614158248016" />
+    <state width="1323" height="214" key="GridCell.Tab.0.bottom/43.23.1323.745@43.23.1323.745" timestamp="1614445869981" />
     <state width="1279" height="594" key="GridCell.Tab.0.bottom/45.23.1321.745@45.23.1321.745" timestamp="1612084730400" />
     <state width="1277" height="427" key="GridCell.Tab.0.bottom/47.23.1319.745@47.23.1319.745" timestamp="1610632042928" />
-    <state width="1323" height="245" key="GridCell.Tab.0.center" timestamp="1614158248015">
+    <state width="1323" height="214" key="GridCell.Tab.0.center" timestamp="1614445869978">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="245" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1614158248015" />
+    <state width="1323" height="214" key="GridCell.Tab.0.center/43.23.1323.745@43.23.1323.745" timestamp="1614445869978" />
     <state width="1279" height="594" key="GridCell.Tab.0.center/45.23.1321.745@45.23.1321.745" timestamp="1612084730398" />
     <state width="1277" height="427" key="GridCell.Tab.0.center/47.23.1319.745@47.23.1319.745" timestamp="1610632042926" />
-    <state width="1323" height="245" key="GridCell.Tab.0.left" timestamp="1614158248014">
+    <state width="1323" height="214" key="GridCell.Tab.0.left" timestamp="1614445869968">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="245" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1614158248014" />
+    <state width="1323" height="214" key="GridCell.Tab.0.left/43.23.1323.745@43.23.1323.745" timestamp="1614445869968" />
     <state width="1279" height="594" key="GridCell.Tab.0.left/45.23.1321.745@45.23.1321.745" timestamp="1612084730395" />
     <state width="1277" height="427" key="GridCell.Tab.0.left/47.23.1319.745@47.23.1319.745" timestamp="1610632042925" />
-    <state width="1323" height="245" key="GridCell.Tab.0.right" timestamp="1614158248015">
+    <state width="1323" height="214" key="GridCell.Tab.0.right" timestamp="1614445869979">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="245" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1614158248015" />
+    <state width="1323" height="214" key="GridCell.Tab.0.right/43.23.1323.745@43.23.1323.745" timestamp="1614445869979" />
     <state width="1279" height="594" key="GridCell.Tab.0.right/45.23.1321.745@45.23.1321.745" timestamp="1612084730399" />
     <state width="1277" height="427" key="GridCell.Tab.0.right/47.23.1319.745@47.23.1319.745" timestamp="1610632042927" />
-    <state width="1323" height="245" key="GridCell.Tab.1.bottom" timestamp="1614158248019">
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1614445869984">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="245" key="GridCell.Tab.1.bottom/43.23.1323.745@43.23.1323.745" timestamp="1614158248019" />
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom/43.23.1323.745@43.23.1323.745" timestamp="1614445869984" />
     <state width="1277" height="232" key="GridCell.Tab.1.bottom/45.23.1321.745@45.23.1321.745" timestamp="1611668158288" />
-    <state width="1323" height="245" key="GridCell.Tab.1.center" timestamp="1614158248017">
+    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1614445869983">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="245" key="GridCell.Tab.1.center/43.23.1323.745@43.23.1323.745" timestamp="1614158248017" />
+    <state width="1323" height="214" key="GridCell.Tab.1.center/43.23.1323.745@43.23.1323.745" timestamp="1614445869983" />
     <state width="1277" height="232" key="GridCell.Tab.1.center/45.23.1321.745@45.23.1321.745" timestamp="1611668158286" />
-    <state width="1323" height="245" key="GridCell.Tab.1.left" timestamp="1614158248016">
+    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1614445869982">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="245" key="GridCell.Tab.1.left/43.23.1323.745@43.23.1323.745" timestamp="1614158248016" />
+    <state width="1323" height="214" key="GridCell.Tab.1.left/43.23.1323.745@43.23.1323.745" timestamp="1614445869982" />
     <state width="1277" height="232" key="GridCell.Tab.1.left/45.23.1321.745@45.23.1321.745" timestamp="1611668158285" />
-    <state width="1323" height="245" key="GridCell.Tab.1.right" timestamp="1614158248018">
+    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1614445869983">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state width="1323" height="245" key="GridCell.Tab.1.right/43.23.1323.745@43.23.1323.745" timestamp="1614158248018" />
+    <state width="1323" height="214" key="GridCell.Tab.1.right/43.23.1323.745@43.23.1323.745" timestamp="1614445869983" />
     <state width="1277" height="232" key="GridCell.Tab.1.right/45.23.1321.745@45.23.1321.745" timestamp="1611668158287" />
     <state x="294" y="137" key="IDE.errors.dialog" timestamp="1612524045193">
       <screen x="43" y="23" width="1323" height="745" />
@@ -467,10 +477,10 @@
     <state x="113" y="46" width="982" height="722" key="SettingsEditor/43.23.1323.745@43.23.1323.745" timestamp="1613805449396" />
     <state x="115" y="46" key="SettingsEditor/45.23.1321.745@45.23.1321.745" timestamp="1611755046660" />
     <state x="118" y="46" key="SettingsEditor/47.23.1319.745@47.23.1319.745" timestamp="1611746031390" />
-    <state x="303" y="124" key="Vcs.Push.Dialog.v2" timestamp="1613806267598">
+    <state x="303" y="124" key="Vcs.Push.Dialog.v2" timestamp="1614158879407">
       <screen x="43" y="23" width="1323" height="745" />
     </state>
-    <state x="303" y="124" key="Vcs.Push.Dialog.v2/43.23.1323.745@43.23.1323.745" timestamp="1613806267598" />
+    <state x="303" y="124" key="Vcs.Push.Dialog.v2/43.23.1323.745@43.23.1323.745" timestamp="1614158879407" />
     <state x="305" y="124" key="Vcs.Push.Dialog.v2/45.23.1321.745@45.23.1321.745" timestamp="1612245916535" />
     <state x="510" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612951396485">
       <screen x="43" y="23" width="1323" height="745" />

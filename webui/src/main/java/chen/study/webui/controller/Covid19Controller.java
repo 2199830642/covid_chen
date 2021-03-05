@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -36,12 +37,47 @@ public class Covid19Controller {
 
 
     //getNationalMapData
+    /**
+     * 查询全国各省份累计确诊数据并返回
+     */
+    @RequestMapping("getNationalMapData")
+    public Result getNationalMapData(){
+        String datetime = FastDateFormat.getInstance("yyyy-MM-dd").format(System.currentTimeMillis());
+        List<Map<String, Object>> data =  covidMapper.getNationalMapData(datetime);
+        return Result.success(data);
+    }
 
     //getCovidTimeData
+    /**
+     * 查询全国每一天的疫情数据并返回
+     */
+    @RequestMapping("getCovidTimeData")
+    public Result getCovidTimeData(){
+        List<Map<String, Object>> data =  covidMapper.getCovidTimeData();
+        return Result.success(data);
+    }
+
 
     //getCovidImportData
+    /**
+     * 查询各省份境外输入病例数量
+     */
+    @RequestMapping("getCovidImportData")
+    public Result getCovidImportData(){
+        String datetime = FastDateFormat.getInstance("yyyy-MM-dd").format(System.currentTimeMillis());
+        List<Map<String, Object>> data = covidMapper.getCovidImportData(datetime);
+        return  Result.success(data);
+    }
 
     //getCovidWz
+    /**
+     * 查询各物资使用情况
+     */
+    @RequestMapping("getCovidWz")
+    public Result getCovidWz(){
+        List<Map<String, Object>> data = covidMapper.getCovidWz();
+        return Result.success(data);
+    }
 
 
 }

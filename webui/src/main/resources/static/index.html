@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <hr color="red">
     <meta charset="utf-8">
-    <title>疫情大数据</title>
+    <title>新冠疫情大数据监测系统</title>
     <script src="js/echarts.js"></script>
     <script src="js/china.js"></script>
     <script src="js/jquery.js"></script>
@@ -36,12 +37,13 @@
 </head>
 <body>
 <div>
-    <h2 align="center">实时疫情大数据平台</h2>
+    <h2 align="center">新冠疫情监测大数据平台</h2>
 </div>
     <br>
-    <hr>
+    <hr color="red">
+    <hr color="red">
 <div id="covid_all" class="center">
-    <table class="table table-bordered" bgcolor="#b0e0e6">
+    <table class="table table-bordered" bgcolor="FFF0F5">
         <thead>
         <tr>
             <th>
@@ -77,17 +79,20 @@
     </table>
 </div>
     <br>
-    <hr>
+<hr color="red">
 <div id="map_all" style="width: 1500px;height:600px;" class="center"></div>
     <br>
-    <hr>
+<hr color="red">
 <div id="time_line" style="width: 1500px;height:600px;" class="center"></div>
     <br>
-    <hr>
+<hr color="red">
 <div id="import_pie" style="width: 1500px;height:600px;" class="center"></div>
     <br>
-    <hr>
+<hr color="red">
 <div id="covid19_wz" style="width: 1500px;height:600px;" class="center"></div>
+<div class="center" align="center" >
+    <p>小陈 版权所有Copyright 2021-2099, All Rights Reserved 陕ICP备1xxxxxxx</p>
+</div>
 </body>
 
 <script type="text/javascript">
@@ -189,14 +194,24 @@
     var myLineChart = echarts.init(document.getElementById("time_line"));
     myLineChart.setOption({
         title: {
-            text: '疫情趋势'
+            text: '疫情趋势折线图'
         },
         tooltip: {
-            trigger: 'axis'
+            trigger: 'axis',
+            //
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            }
+            //
         },
         legend: {
             data: ['新增确诊', '累计确诊', '疑似病例', '累计治愈', '累计死亡']
         },
+
+
         dataset: {
             // 这里指定了维度名的顺序，从而可以利用默认的维度到坐标轴的映射。
             dimensions: ['dateId', '新增确诊', '累计确诊', '疑似病例', '累计治愈', '累计死亡'],
@@ -222,11 +237,31 @@
             type: 'value'
         },
         series: [
-            {type: 'line'},
-            {type: 'line'},
-            {type: 'line'},
-            {type: 'line'},
-            {type: 'line'}
+            {type: 'line',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },},
+            {type: 'line',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },},
+            {type: 'line',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },},
+            {type: 'line',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },},
+            {type: 'line',
+                areaStyle: {},
+                emphasis: {
+                    focus: 'series'
+                },}
         ]
     });
 
@@ -244,8 +279,12 @@
             xAxis: {
                 data: xdata2
             }
+
         })
     })
+
+
+
 
 
 
@@ -253,30 +292,46 @@
     var myPieChart = echarts.init(document.getElementById("import_pie"));
     myPieChart.setOption({
         title: {
-            text: '境外输入统计'
+            text: '境外输入统计饼图'
         },
         tooltip: {
             trigger: 'item',
-            formatter: '{a} <br/>{b} : {c} ({d}%)'
+            //formatter: '{a} <br/>{b} : {c} ({d}%)'
         },
         legend: {
-            type: 'scroll',
+            /*type: 'scroll',
             orient: 'vertical',
             right: 10,
             top: 20,
-            bottom: 20,
+            bottom: 20,*/
+            top: '5%',
+            left: 'center'
         },
+
         series : [
             {
                 name: '境外输入',
-                type: 'pie',    // 设置图表类型为饼图
-                radius: '70%',  // 饼图的半径
+                type: 'pie',
+                radius: ['40%', '70%'],
+                avoidLabelOverlap: false,
+                itemStyle: {
+                    borderRadius: 10,
+                    borderColor: '#fff',
+                    borderWidth: 2
+                },
+                label: {
+                    show: false,
+                    position: 'center'
+                },
                 emphasis: {
-                    itemStyle: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    label: {
+                        show: true,
+                        fontSize: '40',
+                        fontWeight: 'bold'
                     }
+                },
+                labelLine: {
+                    show: false
                 },
                 data:[          // 数据数组，name 为数据项名称，value 为数据项值
                     {value:235, name:'视频广告'},
